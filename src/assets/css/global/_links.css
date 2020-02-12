@@ -1,0 +1,36 @@
+a {
+	color: var(--blackOff);
+	text-decoration-skip: auto;
+	background-color: transparent;
+	transition: color var(--transitionTimingBase);
+
+	@media (prefers-color-scheme: dark) {
+		color: var(--grayLighter);
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: rgba(0, 0, 0, 0.33);
+		text-decoration: none;
+
+		@media (prefers-color-scheme: dark) {
+			color: rgba(255, 255, 255, 0.33);
+		}
+	}
+
+	&:not([href]):not([tabindex]) {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:not([href]):not([tabindex]):focus,
+	&:not([href]):not([tabindex]):hover {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:not([href]):not([tabindex]):focus {
+		outline: 0;
+	}
+}

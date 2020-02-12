@@ -1,0 +1,5 @@
+:root {
+	--transitionTimingBase: 300ms;
+	--transitionTimingMed: 600ms;
+	--transitionTimingSlow: 900ms;
+}

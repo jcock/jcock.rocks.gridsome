@@ -1,0 +1,42 @@
+::selection {
+	background: var(--gray);
+	color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--headingsFontFamily);
+	font-weight: var(--headingsFontWeight);
+	line-height: var(--headingsLineHeight);
+	color: inherit;
+	margin-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: var(--step-5);
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: var(--step-4);
+}
+
+h3 {
+	font-size: var(--step-3);
+}
+
+h4 {
+	font-size: var(--step-2);
+}
+
+h5 {
+	font-size: var(--step-1);
+}
+
+h6 {
+	font-size: var(--step-0);
+}

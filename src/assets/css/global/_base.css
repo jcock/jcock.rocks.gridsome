@@ -1,0 +1,51 @@
+/* ROOT
+ * ------------------------------ */
+@viewport {
+	width: device-width;
+}
+
+html {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--white);
+	color: var(--grayDarkest);
+	font-family: var(--fontBase);
+	font-size: var(--fontSizeBase);
+	font-weight: 400;
+	line-height: var(--lineHeightBase);
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--grayDarkest);
+		color: var(--white);
+	}
+}
+
+/* GENERAL
+ * ------------------------------ */
+[tabindex='-1']:focus {
+	outline: none !important;
+}
+
+a,
+area,
+button,
+[role='button'],
+input:not([type='range']) label,
+select,
+summary,
+textarea {
+	touch-action: manipulation;
+}

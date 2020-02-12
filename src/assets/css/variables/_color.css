@@ -1,0 +1,27 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--red: #d9534f;
+	--orange: #f0ad4d;
+	--yellow: #ffd500;
+	--green: #12f292;
+	--blue: #2095f0;
+	--teal: #68b7f5;
+	--pink: #ed4e6e;
+	--purple: #613d7c;
+
+	--blackOff: #0d0d0d;
+	--grayDarkest: #181818;
+	--grayDark: #292b2c;
+	--gray: #464a4c;
+	--grayLight: #aaa;
+	--grayLighter: #eceeef;
+	--grayLightest: #f7f7f9;
+
+	--brandPrimary: var(--blue);
+	--brandSuccess: var(--green);
+	--brandInfo: var(--teal);
+	--brandWarning: var(--orange);
+	--brandDanger: var(--pink);
+	--brandInverse: var(--grayDark);
+}
