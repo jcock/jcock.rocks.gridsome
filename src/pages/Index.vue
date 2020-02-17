@@ -28,14 +28,6 @@
 	</Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
-}
-</script>
-
 <page-query>
 query {
 	works: allWork(filter: { published: { eq: true }}) {
@@ -57,6 +49,14 @@ query {
 	}
 }
 </page-query>
+
+<script>
+export default {
+	metaInfo: {
+		title: 'Work'
+	}
+}
+</script>
 
 <style scoped>
 .post--cover {

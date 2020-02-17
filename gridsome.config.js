@@ -3,6 +3,9 @@ const presetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano');
 const purgecss = require('@fullhuman/postcss-purgecss');
 
+const siteTitle = 'Jason Cockerham 🤘 Designer and Developer';
+
+// PostCSS config
 const postcssPlugins = [
 	cssImport(),
 	presetEnv({
@@ -13,6 +16,7 @@ const postcssPlugins = [
 	})
 ];
 
+// PurgeCSS only in production
 if (process.env.NODE_ENV === 'production') {
 	postcssPlugins.push(
 		purgecss({
@@ -22,9 +26,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
-	siteName: 'Jason Cockerham 🤘 Designer and Developer',
+	siteName: siteTitle,
 	siteDescription: 'The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer.',
 	siteUrl: 'https://jcock.rocks/',
+	titleTemplate: `%s | ${siteTitle}`,
 
 	templates: {
 		Work: '/work/:title',
