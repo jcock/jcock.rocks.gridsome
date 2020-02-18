@@ -18,27 +18,11 @@
 </template>
 
 <script>
-import site from '@/data/site.json'
 import Skip from '@/components/Skip'
 
 export default {
 	components: {
 		Skip
-	},
-	metaInfo: {
-		titleTemplate: (titleChunk) => {
-			return titleChunk ? `${titleChunk} | ${site.name}` : `${site.name}`;
-		},
-		meta: [
-			{
-				name: 'description',
-				content: `${site.description}`
-			},
-			{
-				name: 'author',
-				content: `${site.author.name}`
-			}
-		]
 	}
 }
 </script>
