@@ -1,5 +1,5 @@
 <template>
-	<transition name="fade" mode="out-in">
+	<transition name="fade" mode="out-in" appear>
 		<router-view />
 	</transition>
 </template>
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity 200ms ease-in-out;
 }
 .fade-enter,
 .fade-leave-to {
