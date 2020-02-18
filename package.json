@@ -1,7 +1,7 @@
 {
 	"name": "jcock.rocks",
 	"version": "1.0.0",
-	"description": "The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer -- built with web components.",
+	"description": "The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer.",
 	"private": true,
 	"keywords": [
 		"gridsome",
@@ -20,7 +20,6 @@
 		"explore": "gridsome explore"
 	},
 	"dependencies": {
-		"@gridsome/plugin-google-analytics": "^0.1.0",
 		"@gridsome/plugin-sitemap": "^0.2.3",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-remark": "^0.4.0",
