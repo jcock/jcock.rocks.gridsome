@@ -17,20 +17,28 @@
 	</div>
 </template>
 
-<static-query>
-query {
-	metadata {
-		siteName
-	}
-}
-</static-query>
-
 <script>
+import site from '@/data/site.json'
 import Skip from '@/components/Skip'
 
 export default {
 	components: {
 		Skip
+	},
+	metaInfo: {
+		titleTemplate: (titleChunk) => {
+			return titleChunk ? `${titleChunk} | ${site.name}` : `${site.name}`;
+		},
+		meta: [
+			{
+				name: 'description',
+				content: `${site.description}`
+			},
+			{
+				name: 'author',
+				content: `${site.author.name}`
+			}
+		]
 	}
 }
 </script>
@@ -54,3 +62,11 @@ export default {
   margin-left: 1rem;
 }
 </style>
+
+<static-query>
+query {
+	metadata {
+		siteName
+	}
+}
+</static-query>

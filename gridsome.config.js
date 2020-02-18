@@ -3,7 +3,7 @@ const presetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano');
 const purgecss = require('@fullhuman/postcss-purgecss');
 
-const siteTitle = 'Jason Cockerham 🤘 Designer and Developer';
+const site = require('./src/data/site.json');
 
 // PostCSS config
 const postcssPlugins = [
@@ -26,10 +26,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
-	siteName: siteTitle,
-	siteDescription: 'The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer.',
-	siteUrl: 'https://jcock.rocks/',
-	titleTemplate: `%s | ${siteTitle}`,
+	siteName: site.name,
+	siteDescription: site.description,
+	siteUrl: site.url,
 
 	templates: {
 		Work: '/work/:title',
@@ -60,6 +59,8 @@ module.exports = {
 
 	transformers: {
 		remark: {
+			externalLinksTarget: '_self',
+			externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
 			plugins: ['@gridsome/remark-prismjs']
 		}
 	},
@@ -70,5 +71,11 @@ module.exports = {
 				plugins: postcssPlugins
 			}
 		}
+	},
+
+	chainWebpack: config => {
+		const svgRule = config.module.rule('svg');
+		svgRule.uses.clear();
+		svgRule.use('vue-svg-loader').loader('vue-svg-loader');
 	}
 };

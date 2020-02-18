@@ -1,3 +1,4 @@
+import site from '@/data/site.json';
 import Default from '~/layouts/Default.vue';
 import 'typeface-spectral';
 
@@ -10,6 +11,13 @@ export default function(Vue, { head }) {
 	head.htmlAttrs = { lang: 'en' };
 
 	head.meta.push(
+		{
+			charset: 'utf-8'
+		},
+		{
+			name: 'referrer',
+			content: 'no-referrer-when-downgrade'
+		},
 		{
 			name: 'msapplication-TileColor',
 			content: '#0d0d0d'
@@ -44,6 +52,14 @@ export default function(Vue, { head }) {
 		{
 			rel: 'manifest',
 			href: '/site.webmanifest'
+		},
+		{
+			rel: 'canonical',
+			href: `${site.url}`
+		},
+		{
+			rel: 'preconnect',
+			href: `${site.url}`
 		}
 	);
 }
