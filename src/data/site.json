@@ -1,7 +1,10 @@
 {
 	"name": "Jason Cockerham 🤘 Designer and Developer",
 	"description": "The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer.",
-	"url": "https://jcock.rocks/",
+	"url": "https://jcock.rocks",
+	"color": {
+		"primary": "#0d0d0d"
+	},
 	"author": {
 		"name": "Jason Cockerham",
 		"email": "jason@jcock.rocks",
@@ -12,5 +15,10 @@
 		"instagram": "jc0ck",
 		"linkedin": "/in/jasoncockerham",
 		"twitter": "jcock"
+	},
+	"identity": {
+		"google": "CqIX8qMP-9YzT5j6O2ITwq-p0RpcxkbA3UZeEwZcRJw",
+		"microsoft": "D5EB4D7B4B2096C374CE2AEB1D6EDB32",
+		"facebook": "103751713080205"
 	}
 }

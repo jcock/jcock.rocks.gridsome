@@ -19,12 +19,48 @@ export default function(Vue, { head }) {
 			content: 'no-referrer-when-downgrade'
 		},
 		{
+			name: 'author',
+			content: site.author.name
+		},
+		{
+			property: 'og:url',
+			content: site.url
+		},
+		{
+			name: 'og:type',
+			content: 'website'
+		},
+		{
+			name: 'og:title',
+			content: site.name
+		},
+		{
+			name: 'og:description',
+			content: site.description
+		},
+		{
+			name: 'og:image',
+			content: `${site.url}/og.png`
+		},
+		{
+			name: 'fb:app_id',
+			content: site.identity.facebook
+		},
+		{
 			name: 'msapplication-TileColor',
-			content: '#0d0d0d'
+			content: site.color.primary
 		},
 		{
 			name: 'theme-color',
-			content: '#0d0d0d'
+			content: site.color.primary
+		},
+		{
+			name: 'google-site-verification',
+			content: site.identity.google
+		},
+		{
+			name: 'msvalidate.01',
+			content: site.identity.microsoft
 		}
 	);
 
@@ -47,7 +83,7 @@ export default function(Vue, { head }) {
 		{
 			rel: 'mask-icon',
 			href: '/safari-pinned-tab.svg',
-			color: '#0d0d0d'
+			color: site.color.primary
 		},
 		{
 			rel: 'manifest',
@@ -55,11 +91,11 @@ export default function(Vue, { head }) {
 		},
 		{
 			rel: 'canonical',
-			href: `${site.url}`
+			href: site.url
 		},
 		{
 			rel: 'preconnect',
-			href: `${site.url}`
+			href: site.url
 		}
 	);
 }

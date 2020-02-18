@@ -1,6 +1,6 @@
 <template>
 	<div class="layout">
-		<skip start="#start-of-content" />
+		<btn-skip-to />
 
 		<header class="header">
 			<strong>
@@ -11,18 +11,18 @@
 				<g-link class="nav__link" to="/about/">About</g-link>
 			</nav>
 		</header>
-		<main id="start-of-content" itemprop="mainEntity">
+		<main id="main" itemprop="mainEntity">
 			<slot/>
 		</main>
 	</div>
 </template>
 
 <script>
-import Skip from '@/components/Skip'
+import BtnSkipTo from '@/components/BtnSkipTo'
 
 export default {
 	components: {
-		Skip
+		BtnSkipTo
 	}
 }
 </script>

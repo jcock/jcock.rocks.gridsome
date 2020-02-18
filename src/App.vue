@@ -17,11 +17,6 @@ export default {
 				key: 'description',
 				name: 'description',
 				content: `${site.description}`
-			},
-			{
-				key: 'author',
-				name: 'author',
-				content: `${site.author.name}`
 			}
 		]
 	}
