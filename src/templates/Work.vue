@@ -39,6 +39,7 @@ export default {
 <page-query>
 query Work ($path: String) {
 	work (path: $path) {
+		id
 		title
 		path
 		slug

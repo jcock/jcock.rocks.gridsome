@@ -20,7 +20,9 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') {
 	postcssPlugins.push(
 		purgecss({
-			content: ['src/assets/**/*.css', 'src/**/*.vue', 'src/**/*.js']
+			content: ['src/assets/**/*.css', 'src/**/*.vue', 'src/**/*.js'],
+			whitelist: ['g-image', 'g-image--lazy', 'g-image--loaded'],
+			whitelistPatterns: [/active$/, /^is--/]
 		})
 	);
 }

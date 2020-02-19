@@ -10,26 +10,22 @@
 
 		<hr>
 
-		<ol>
-			<li v-for="edge in $page.works.edges" :key="edge.node.id" :post="edge.node">
-				<article>
-					<g-image :alt="edge.node.title" v-if="edge.node.cover" :src="edge.node.cover" class="post--cover" />
-
-					<div>
-						<h2 v-html="edge.node.title" />
-						<p v-html="edge.node.exerpt" />
-
-						<g-link :to="edge.node.path">More</g-link>
-					</div>
-				</article>
-			</li>
-		</ol>
+		<PostList v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 	</Layout>
 </template>
 
+<script>
+import PostList from '~/components/PostList.vue'
+export default {
+	components: {
+		PostList
+	}
+}
+</script>
+
 <page-query>
 query {
-	works: allWork(filter: { published: { eq: true }}) {
+	posts: allWork(filter: { published: { eq: true }}) {
 		edges {
 			node {
 				id

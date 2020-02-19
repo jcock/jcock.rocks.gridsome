@@ -1,6 +1,6 @@
 <template>
 	<div class="layout">
-		<btn-skip-to />
+		<button-skip-to />
 
 		<header class="header">
 			<strong>
