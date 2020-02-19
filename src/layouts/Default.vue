@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import BtnSkipTo from '@/components/BtnSkipTo'
+import ButtonSkipTo from '@/components/ButtonSkipTo'
 
 export default {
 	components: {
-		BtnSkipTo
+		ButtonSkipTo
 	}
 }
 </script>

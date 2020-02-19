@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'BtnSkipTo',
+	name: 'ButtonSkipTo',
 	props: {
 		text: {
 			type: String,
