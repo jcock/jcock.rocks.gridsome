@@ -6,9 +6,9 @@
 	--fontBase: var(--fontSerif);
 
 	--fontSizeBase: var(--step-0);
-	--lineHeightBase: var(--fluid-min-scale-2);
+	--lineHeightBase: calc(var(--fluid-min-scale-2) * 1);
 
 	--headingsFontFamily: var(--fontSansSerif);
 	--headingsFontWeight: 700;
-	--headingsLineHeight: var(--fluid-min-scale-1);
+	--headingsLineHeight: calc(var(--fluid-min-scale-1) * 1);
 }

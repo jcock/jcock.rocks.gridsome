@@ -16,8 +16,8 @@ html {
 }
 
 body {
-	background-color: var(--white);
-	color: var(--grayDarkest);
+	background-color: var(--bodyBg);
+	color: var(--bodyColor);
 	font-family: var(--fontBase);
 	font-size: var(--fontSizeBase);
 	font-weight: 400;
@@ -26,11 +26,6 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
-
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--grayDarkest);
-		color: var(--white);
-	}
 }
 
 /* GENERAL

@@ -1,6 +1,6 @@
 ::selection {
-	background: var(--gray);
-	color: var(--white);
+	background-color: var(--selectionBg);
+	color: var(--selectionColor);
 }
 
 h1,

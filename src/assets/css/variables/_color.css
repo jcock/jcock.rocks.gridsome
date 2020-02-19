@@ -24,4 +24,23 @@
 	--brandWarning: var(--orange);
 	--brandDanger: var(--pink);
 	--brandInverse: var(--grayDark);
+
+	--bodyBg: var(--white);
+	--bodyColor: var(--grayDarkest);
+
+	--selectionBg: var(--bodyColor);
+	--selectionColor: var(--bodyBg);
+
+	--linkColor: var(--bodyColor);
+	--linkHoverColor: var(--gray);
+}
+
+/* DARK MODE
+ * ------------------------------ */
+
+@media (prefers-color-scheme: dark) {
+	--bodyBg: var(--grayDarkest);
+	--bodyColor: var(--white);
+
+	--linkHoverColor: var(--grayLighter);
 }
