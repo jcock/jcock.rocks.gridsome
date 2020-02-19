@@ -39,8 +39,10 @@
  * ------------------------------ */
 
 @media (prefers-color-scheme: dark) {
-	--bodyBg: var(--grayDarkest);
-	--bodyColor: var(--white);
+	:root {
+		--bodyBg: var(--grayDarkest);
+		--bodyColor: var(--white);
 
-	--linkHoverColor: var(--grayLighter);
+		--linkHoverColor: var(--grayLighter);
+	}
 }

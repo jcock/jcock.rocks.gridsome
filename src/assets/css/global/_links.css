@@ -2,7 +2,7 @@ a {
 	color: var(--linkColor);
 	text-decoration-skip: auto;
 	background-color: transparent;
-	transition: color var(--transitionTimingBase);
+	transition: color var(--transitionTimingBase) ease-in-out;
 
 	&:hover,
 	&:active,
