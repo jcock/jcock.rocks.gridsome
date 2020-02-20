@@ -61,6 +61,14 @@ module.exports = {
 			}
 		},
 		{
+			use: '@gridsome/plugin-critical',
+			options: {
+				paths: ['/'],
+				width: 1300,
+				height: 900
+			}
+		},
+		{
 			use: '@gridsome/plugin-sitemap',
 			options: {
 				cacheTime: 600000
