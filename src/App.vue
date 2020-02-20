@@ -1,13 +1,20 @@
 <template>
-	<transition name="fade" mode="out-in" appear>
-		<router-view />
-	</transition>
+	<div>
+		<layout-header />
+		<transition name="fade" mode="out-in" appear>
+			<router-view />
+		</transition>
+	</div>
 </template>
 
 <script>
-import site from '@/data/site.json'
+import LayoutHeader from '@/components/LayoutHeader';
+import site from '@/data/site.json';
 
 export default {
+	components: {
+		LayoutHeader
+	},
 	metaInfo: {
 		titleTemplate: (titleChunk) => {
 			return titleChunk ? `${titleChunk} | ${site.name}` : `${site.name}`;

@@ -1,14 +1,14 @@
 a {
-	color: var(--linkColor);
-	text-decoration-skip: auto;
 	background-color: transparent;
+	color: var(--linkColor);
+	text-decoration: none;
+	text-decoration-skip: edges;
 	transition: color var(--transitionTimingBase) ease-in-out;
 
 	&:hover,
 	&:active,
 	&:focus {
 		color: var(--linkHoverColor);
-		text-decoration: none;
 	}
 
 	&:not([href]):not([tabindex]) {

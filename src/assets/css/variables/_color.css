@@ -43,6 +43,6 @@
 		--bodyBg: var(--grayDarkest);
 		--bodyColor: var(--white);
 
-		--linkHoverColor: var(--grayLighter);
+		--linkHoverColor: var(--grayLight);
 	}
 }

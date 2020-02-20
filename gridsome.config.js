@@ -12,7 +12,8 @@ const postcssPlugins = [
 		stage: 1
 	}),
 	cssnano({
-		preset: 'default'
+		preset: 'default',
+		autoprefixer: false
 	})
 ];
 
@@ -20,8 +21,16 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') {
 	postcssPlugins.push(
 		purgecss({
-			content: ['src/assets/**/*.css', 'src/**/*.vue', 'src/**/*.js'],
-			whitelist: ['g-image', 'g-image--lazy', 'g-image--loaded'],
+			content: [
+				'./src/assets/**/*.css',
+				'./src/**/*.vue',
+				'./src/**/*.js',
+				'./src/**/*.jsx',
+				'./src/**/*.html',
+				'./src/**/*.pug',
+				'./src/**/*.md'
+			],
+			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded'],
 			whitelistPatterns: [/active$/, /^is--/]
 		})
 	);

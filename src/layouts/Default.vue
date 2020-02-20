@@ -1,56 +1,43 @@
 <template>
-	<div class="layout">
-		<button-skip-to />
-
-		<header class="header">
-			<strong>
-				<g-link to="/">{{ $static.metadata.siteName }}</g-link>
-			</strong>
-			<nav class="nav">
-				<g-link class="nav__link" to="/">Home</g-link>
-				<g-link class="nav__link" to="/about/">About</g-link>
-			</nav>
-		</header>
-		<main id="main" itemprop="mainEntity">
+	<div>
+		<main id="main" class="main" itemprop="mainEntity">
 			<slot/>
 		</main>
+		<layout-footer />
 	</div>
 </template>
 
 <script>
-import ButtonSkipTo from '@/components/ButtonSkipTo'
+import LayoutFooter from '@/components/LayoutFooter';
 
 export default {
 	components: {
-		ButtonSkipTo
+		LayoutFooter
 	}
 }
 </script>
 
 <style scoped>
-.layout {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.main {
+	margin: 0 var(--step-3);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+.btn--skip {
+	left: 1rem;
+	padding: 0.5rem 1rem;
+	position: absolute;
+	top: 0;
+	z-index: 9999;
 }
 
-.nav__link {
-  margin-left: 1rem;
-}
-</style>
+.btn--top {
+	opacity: 0.33;
+	transition: color var(--transitionTimingBase) ease-in-out, opacity var(--transitionTimingBase) ease-in-out;
 
-<static-query>
-query {
-	metadata {
-		siteName
+	&:hover,
+	&:active,
+	&:focus {
+		opacity: 1;
 	}
 }
-</static-query>
+</style>

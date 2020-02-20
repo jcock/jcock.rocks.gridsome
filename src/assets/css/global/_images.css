@@ -4,3 +4,7 @@ img {
 	height: auto;
 	-ms-interpolation-mode: bicubic;
 }
+
+img[src*='svg'] {
+	max-height: 100%;
+}

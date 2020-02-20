@@ -10,7 +10,7 @@
 
 		<hr>
 
-		<PostList v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+		<PostList v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
 	</Layout>
 </template>
 
