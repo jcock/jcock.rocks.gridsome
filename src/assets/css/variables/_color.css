@@ -11,7 +11,8 @@
 	--purple: #613d7c;
 
 	--blackOff: #0d0d0d;
-	--grayDarkest: #181818;
+	/* --grayDarkest: #181818; */
+	--grayDarkest: #111315;
 	--grayDark: #292b2c;
 	--gray: #464a4c;
 	--grayLight: #aaa;
@@ -28,8 +29,8 @@
 	--bodyBg: var(--white);
 	--bodyColor: var(--grayDarkest);
 
-	--selectionBg: var(--bodyColor);
-	--selectionColor: var(--bodyBg);
+	--selectionBg: var(--brandPrimary);
+	--selectionColor: var(--white);
 
 	--linkColor: var(--bodyColor);
 	--linkHoverColor: var(--gray);
