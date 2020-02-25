@@ -46,7 +46,7 @@ module.exports = {
 	siteUrl: site.url,
 
 	templates: {
-		Work: '/work/:title',
+		Work: '/work/:slug',
 		Tag: '/work/tag/:id'
 	},
 
@@ -55,7 +55,9 @@ module.exports = {
 			use: '@gridsome/source-filesystem',
 			options: {
 				typeName: 'Work',
-				path: 'content/work/**/*.md',
+				baseDir: './content/work',
+				path: '**/*.md',
+				pathPrefix: '/work',
 				refs: {
 					tags: {
 						typeName: 'Tag',
@@ -84,8 +86,8 @@ module.exports = {
 				precachedRoutes: ['/'],
 				networkFirst: {
 					cacheName: 'jcock.rocks-nf',
-					// routes: ['/', /\.(js|css|svg|png)$/]
-					routes: ['**/*.{html,css,js,png,svg,json}']
+					// routes: ['/', /\.(js|css|svg|png|jpg|webp)$/]
+					routes: ['**/*.{html,css,js,png,webp,jpg,svg,json}']
 				}
 			}
 		}

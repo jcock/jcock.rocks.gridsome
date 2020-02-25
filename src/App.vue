@@ -4,16 +4,19 @@
 		<transition name="fade" mode="out-in" appear>
 			<router-view />
 		</transition>
+		<layout-footer />
 	</div>
 </template>
 
 <script>
-import LayoutHeader from '@/components/LayoutHeader';
 import site from '@/data/site.json';
+import LayoutHeader from '@/components/LayoutHeader';
+import LayoutFooter from '@/components/LayoutFooter';
 
 export default {
 	components: {
-		LayoutHeader
+		LayoutHeader,
+		LayoutFooter
 	},
 	metaInfo: {
 		titleTemplate: (titleChunk) => {
@@ -35,6 +38,7 @@ export default {
 .fade-leave-active {
 	transition: opacity 200ms ease-in-out;
 }
+
 .fade-enter,
 .fade-leave-to {
 	opacity: 0;

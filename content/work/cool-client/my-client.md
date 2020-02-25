@@ -1,10 +1,10 @@
 ---
 title: "Client Name"
-slug: my-client-name
+slug: cool-client
 description: "This is just a test description"
 date: 2020-02-11 14:43:24
 tags: ['work', 'client name', 'web', 'design', 'development']
-cover: https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80
+cover: ./doggo.webp
 exerpt: "Cras sed cursus ligula, sit amet lobortis tellus. Mauris ornare vel lacus sit amet posuere. Mauris in diam fringilla urna dignissim maximus sed at mauris."
 published: true
 ---

@@ -32,7 +32,7 @@ query {
 				title
 				date (format: "D. MMMM YYYY")
 				exerpt
-				cover
+				cover(width: 640, height: 360, quality: 90, fit: contain)
 				path
 				tags {
 					id

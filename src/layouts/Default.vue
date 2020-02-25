@@ -1,21 +1,8 @@
 <template>
-	<div>
-		<main id="main" class="main" itemprop="mainEntity">
-			<slot/>
-		</main>
-		<layout-footer />
-	</div>
+	<main id="main" class="main" itemprop="mainEntity">
+		<slot/>
+	</main>
 </template>
-
-<script>
-import LayoutFooter from '@/components/LayoutFooter';
-
-export default {
-	components: {
-		LayoutFooter
-	}
-}
-</script>
 
 <style scoped>
 .main {

@@ -1,6 +1,6 @@
 <template>
 	<article>
-		<g-image :src="post.cover" v-if="post.cover" :alt="post.title" class="post--cover" width="640" fit="inside" />
+		<g-image :src="post.cover" v-if="post.cover" :alt="post.title" class="post--cover" width="640" height="480" fit="inside" />
 
 		<div>
 			<h2 v-html="post.title" />
