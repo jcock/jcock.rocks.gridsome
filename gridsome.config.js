@@ -12,8 +12,12 @@ const postcssPlugins = [
 		stage: 1
 	}),
 	cssnano({
-		preset: 'default',
-		autoprefixer: false
+		preset: [
+			'default',
+			{
+				calc: false
+			}
+		]
 	})
 ];
 
@@ -31,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
 				'./src/**/*.md'
 			],
 			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded'],
-			whitelistPatterns: [/active$/, /^is--/, /^js--/]
+			whitelistPatterns: [/active$/, /^is--/, /^js--/, /^fade-/]
 		})
 	);
 }
