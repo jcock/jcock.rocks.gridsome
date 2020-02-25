@@ -16,8 +16,9 @@
 	},
 	"scripts": {
 		"build": "gridsome build",
-		"start": "gridsome develop",
-		"explore": "gridsome explore"
+		"clean": "rm -rf dist",
+		"explore": "gridsome explore",
+		"start": "gridsome develop"
 	},
 	"dependencies": {
 		"@gridsome/plugin-critical": "^0.1.6",
