@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === 'production') {
 				'./src/**/*.md'
 			],
 			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded'],
-			whitelistPatterns: [/active$/, /^is--/]
+			whitelistPatterns: [/active$/, /^is--/, /^js--/]
 		})
 	);
 }
