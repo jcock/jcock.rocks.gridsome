@@ -7,6 +7,8 @@ User Experience Designer and Front-End Developer.
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg?style=for-the-badge)](http://unlicense.org/)
 
+---
+
 ## In the box
 
 * [Gridsome](https://gridsome.org/)
@@ -62,4 +64,4 @@ The service worker (`/service-worker.js` | `/assets/js/service-worker.js`) provi
 
 ### Enjoy
 
-:metal:
+🤘
