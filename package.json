@@ -5,14 +5,16 @@
 	"private": true,
 	"keywords": [
 		"gridsome",
-		"vue"
+		"vue",
+		"postcss",
+		"webpack"
 	],
 	"author": "Jason Cockerham <jason@jcock.rocks>",
 	"license": "Unlicense",
 	"homepage": "http://jcock.rocks/",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/jcock/jcock.rocks.gridsome"
 	},
 	"scripts": {
 		"build": "gridsome build",
