@@ -73,6 +73,17 @@ module.exports = {
 			options: {
 				cacheTime: 600000
 			}
+		},
+		{
+			use: 'gridsome-plugin-service-worker',
+			options: {
+				precachedRoutes: ['/'],
+				networkFirst: {
+					cacheName: 'jcock.rocks-nf',
+					// routes: ['/', /\.(js|css|svg|png)$/]
+					routes: ['**/*.{html,css,js,png,svg,json}']
+				}
+			}
 		}
 	],
 
