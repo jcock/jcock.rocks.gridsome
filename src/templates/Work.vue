@@ -21,15 +21,18 @@
 </template>
 
 <script>
+import site from '@/data/site.json';
+
 export default {
-	metaInfo () {
+	metaInfo() {
 		return {
 			title: this.$page.work.title,
 			meta: [
-				{
-					name: 'description',
-					content: this.$page.work.description
-				}
+				{ key: 'description', name: 'description', content: this.$page.work.description },
+				{ key: 'og:url', property: 'og:url', content: `${site.url}${this.$page.work.path}` },
+				{ key: 'og:title', property: 'og:title', content: this.$page.work.title },
+				{ key: 'og:description', property: 'og:description', content: this.$page.work.description },
+				{ key: 'og:image', property: 'og:image', content: `${site.url}${this.$page.work.og.src}` }
 			]
 		}
 	}
@@ -47,6 +50,7 @@ query Work ($path: String) {
 		content
 		description
 		cover
+		og (width: 1200, height: 630, quality: 90)
 		tags {
 			id
 			title

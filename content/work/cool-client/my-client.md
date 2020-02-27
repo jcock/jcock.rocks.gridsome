@@ -5,6 +5,7 @@ description: "This is just a test description"
 date: 2020-02-11 14:43:24
 tags: ['work', 'client name', 'web', 'design', 'development']
 cover: ./doggo.webp
+og: ./doggo.webp
 exerpt: "Cras sed cursus ligula, sit amet lobortis tellus. Mauris ornare vel lacus sit amet posuere. Mauris in diam fringilla urna dignissim maximus sed at mauris."
 published: true
 ---
