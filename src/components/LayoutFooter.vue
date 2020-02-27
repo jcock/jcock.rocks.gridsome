@@ -1,16 +1,16 @@
 <template>
 	<footer role="contentinfo">
-		<button-anchor to="#top" classes="btn--top" aria-label="Back to the top">↑</button-anchor>
+		<anchor to="#top" classes="btn--top" aria-label="Back to the top">↑</anchor>
 	</footer>
 </template>
 
 <script>
-import ButtonAnchor from '@/components/ButtonAnchor';
+import Anchor from '@/components/Anchor';
 
 export default {
 	name: 'LayoutFooter',
 	components: {
-		ButtonAnchor
+		Anchor
 	}
 }
 </script>

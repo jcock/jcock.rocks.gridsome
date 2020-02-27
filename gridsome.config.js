@@ -35,14 +35,12 @@ if (process.env.NODE_ENV === 'production') {
 				'./src/**/*.md'
 			],
 			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded'],
-			whitelistPatterns: [/active$/, /^is--/, /^js--/, /^fade-/]
+			whitelistPatterns: [/^active/, /^is--/, /^js--/, /^fade-/]
 		})
 	);
 }
 
 module.exports = {
-	siteName: site.name,
-	siteDescription: site.description,
 	siteUrl: site.url,
 
 	templates: {
@@ -117,6 +115,7 @@ module.exports = {
 	},
 
 	chainWebpack: config => {
+		// SVGs as Vue components
 		const svgRule = config.module.rule('svg');
 		svgRule.uses.clear();
 		svgRule.use('vue-svg-loader').loader('vue-svg-loader');

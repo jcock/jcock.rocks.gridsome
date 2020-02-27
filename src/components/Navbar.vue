@@ -56,7 +56,8 @@ export default {
 	& .c2,
 	& .k {
 		opacity: 0;
-		transition: opacity 100ms ease-in-out;
+		transform: translateY(10%);
+		transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
 	}
 
 	& .o {
@@ -80,6 +81,7 @@ export default {
 		& .c2,
 		& .k {
 			opacity: 1;
+			transform: translateY(0);
 		}
 
 		& .o {

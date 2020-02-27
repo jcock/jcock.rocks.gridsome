@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'ButtonAnchor',
+	name: 'Anchor',
 	props: {
 		classes: {
 			type: String,

@@ -1,4 +1,3 @@
-
 <template>
 	<Layout>
 		<h1>Oh no!</h1>
@@ -8,10 +7,9 @@
 
 <script>
 export default {
-	metaInfo () {
-		return {
-			title: `Page not found`
-		}
+	name: 'Error 404',
+	metaInfo: {
+		title: 'Page not found'
 	}
 }
 </script>

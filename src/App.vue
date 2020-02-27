@@ -17,18 +17,6 @@ export default {
 	components: {
 		LayoutHeader,
 		LayoutFooter
-	},
-	metaInfo: {
-		titleTemplate: (titleChunk) => {
-			return titleChunk ? `${titleChunk} | ${site.name}` : `${site.name}`;
-		},
-		meta: [
-			{
-				key: 'description',
-				name: 'description',
-				content: `${site.description}`
-			}
-		]
 	}
 }
 </script>

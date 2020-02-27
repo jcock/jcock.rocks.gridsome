@@ -1,7 +1,10 @@
 {
+	"root": true,
 	"extends": [
 		"airbnb-base",
-		"prettier"
+		"prettier",
+		"prettier/vue",
+		"plugin:prettier/recommended"
 	],
 	"plugins": [
 		"prettier"
@@ -9,10 +12,13 @@
 	"env": {
 		"browser": true,
 		"commonjs": true,
-		"es6": true
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"parser": "babel-eslint"
 	},
 	"rules": {
-		"prettier/prettier": ["error"],
 		"class-methods-use-this": 0,
 		"import/no-unresolved": 0,
 		"linebreak-style": 0,

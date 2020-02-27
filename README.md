@@ -51,10 +51,17 @@ User Experience Designer and Front-End Developer.
 
 The following tasks are exposed in `package.json`:
 
-* `npm run build`
-* `npm clean`
-* `npm explore`
-* `npm start`
+```
+"scripts": {
+	"build": "gridsome build",
+	"clean": "rm -rf dist",
+	"explore": "gridsome explore",
+	"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+	"lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+	"precommit": "npm run lint",
+	"start": "gridsome develop"
+}
+```
 
 ## Offline Support
 
