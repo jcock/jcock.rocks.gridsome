@@ -19,9 +19,6 @@ export default {
 	name: 'Home',
 	components: {
 		PostList
-	},
-	metaInfo: {
-		title: 'Home'
 	}
 }
 </script>
