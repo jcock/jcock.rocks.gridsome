@@ -7,7 +7,7 @@
 		<div>
 			<h2 v-html="post.title" />
 			<ul>
-				<li v-html="post.roles" />
+				<li v-for="role in post.roles" :key="role.id">{{ role }}</li>
 			</ul>
 			<p v-html="post.exerpt" />
 			<g-link :to="post.path" :aria-label="'Read more about ' + post.title">More</g-link>
