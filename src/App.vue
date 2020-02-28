@@ -10,8 +10,8 @@
 
 <script>
 import site from '@/data/site.json';
-import LayoutHeader from '@/components/LayoutHeader';
-import LayoutFooter from '@/components/LayoutFooter';
+import LayoutHeader from '@/components/layout/LayoutHeader';
+import LayoutFooter from '@/components/layout/LayoutFooter';
 
 export default {
 	components: {

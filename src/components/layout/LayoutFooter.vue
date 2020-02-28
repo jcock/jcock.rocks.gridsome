@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Anchor from '@/components/Anchor';
+import Anchor from '@/components/nav/Anchor';
 
 export default {
 	name: 'LayoutFooter',

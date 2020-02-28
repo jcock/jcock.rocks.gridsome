@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Anchor from '@/components/Anchor';
-import Navbar from '@/components/Navbar';
+import Anchor from '@/components/nav/Anchor';
+import Navbar from '@/components/nav/Navbar';
 
 export default {
 	name: 'LayoutHeader',
