@@ -8,7 +8,7 @@
 		<header>
 			<h1>{{ $page.work.title }}</h1>
 			<ul>
-				<li v-for="tag in $page.work.tags" :key="tag.id">{{ tag.title }}</li>
+				<li v-for="role in $page.work.roles" :key="role.id">{{ role }}</li>
 			</ul>
 		</header>
 
@@ -43,14 +43,11 @@ query Work ($path: String) {
 		path
 		slug
 		datetime: date (format: "YYYY-MM-DD HH:mm:ss")
+		roles
 		content
 		description
 		cover
 		og (width: 1200, height: 630, quality: 90)
-		tags {
-			id
-			title
-		}
 	}
 }
 </page-query>

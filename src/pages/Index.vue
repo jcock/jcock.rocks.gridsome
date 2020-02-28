@@ -63,13 +63,10 @@ query {
 				id
 				title
 				date (format: "D. MMMM YYYY")
+				roles
 				exerpt
 				cover(width: 640, height: 360, quality: 90, fit: contain)
 				path
-				tags {
-					id
-					title
-				}
 			}
 		}
 	}

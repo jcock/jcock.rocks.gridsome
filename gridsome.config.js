@@ -54,13 +54,7 @@ module.exports = {
 				typeName: 'Work',
 				baseDir: './content/work',
 				path: '**/*.md',
-				pathPrefix: '/work',
-				refs: {
-					tags: {
-						typeName: 'Tag',
-						create: true
-					}
-				}
+				pathPrefix: '/work'
 			}
 		},
 		{

@@ -16,7 +16,6 @@ export default function(Vue, { head }) {
 		{ charset: 'utf-8' },
 		{ name: 'referrer', content: 'no-referrer-when-downgrade' },
 		{ key: 'description', name: 'description', content: site.description },
-		{ key: 'keywords', name: 'keywords', content: site.keywords },
 		{ key: 'author', name: 'author', content: site.author.name },
 		{ key: 'og:url', property: 'og:url', content: site.url },
 		{ key: 'og:title', property: 'og:title', content: site.name },
