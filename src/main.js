@@ -34,6 +34,8 @@ export default function(Vue, { head }) {
 		{ rel: 'icon', type: 'image/svg+xml', sizes: '32x32', href: '/favicon.svg' },
 		{ rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: site.color.primary },
 		{ rel: 'manifest', href: '/site.webmanifest' },
+		{ rel: 'preload', href: '~/assets/fonts/Inter.roman.woff2' },
+		{ rel: 'preload', href: '~/assets/fonts/Inter.italic.woff2' },
 		// { rel: 'preconnect', href: 'https://www.google-analytics.com' },
 		{ rel: 'preconnect', href: site.url },
 		{ rel: 'canonical', href: site.url }
