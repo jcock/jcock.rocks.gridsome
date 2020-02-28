@@ -1,14 +1,17 @@
 :root {
-	--fontSansSerif: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
+	--fontSansSerif: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 	--fontSerif: Georgia, 'Times New Roman', Times, serif;
 	--fontMonospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-	--fontBase: var(--fontSerif);
+	--fontBase: var(--fontSansSerif);
 
 	--fontSizeBase: var(--step-0);
 	--lineHeightBase: calc(var(--fluid-min-scale-2) * 1);
+	--letterSpacingBase: calc(var(--fontSizeBase) * 0.0015);
+
+	--fontWeightBase: 300;
+	--fontWeightNormal: calc(var(--fontWeightBase) * 1.33);
 
 	--headingsFontFamily: var(--fontSansSerif);
-	--headingsFontWeight: 700;
 	--headingsLineHeight: calc(var(--fluid-min-scale-1) * 1);
 }

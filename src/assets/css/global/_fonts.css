@@ -1,0 +1,22 @@
+/* INTER FONT (Variable)
+ * https://rsms.me/inter/
+ * ------------------------------------------------------------------------- */
+
+/* stylelint-disable property-no-unknown */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	font-display: swap;
+	src: url('../fonts/Inter.roman.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-style: italic;
+	font-named-instance: 'Italic';
+	font-display: swap;
+	src: url('../fonts/Inter.italic.woff2') format('woff2');
+}
