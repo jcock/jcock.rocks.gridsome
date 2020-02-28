@@ -1,6 +1,8 @@
 <template>
 	<article>
-		<g-image :src="post.cover" v-if="post.cover" :alt="post.title" class="post--cover" width="640" height="480" fit="inside" />
+		<figure>
+			<g-image :src="post.cover" v-if="post.cover" :alt="post.title" class="post--cover" />
+		</figure>
 
 		<div>
 			<h2 v-html="post.title" />

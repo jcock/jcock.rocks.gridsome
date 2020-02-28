@@ -16,6 +16,7 @@ export default function(Vue, { head }) {
 		{ charset: 'utf-8' },
 		{ name: 'referrer', content: 'no-referrer-when-downgrade' },
 		{ key: 'description', name: 'description', content: site.description },
+		{ key: 'keywords', name: 'keywords', content: site.keywords },
 		{ key: 'author', name: 'author', content: site.author.name },
 		{ key: 'og:url', property: 'og:url', content: site.url },
 		{ key: 'og:title', property: 'og:title', content: site.name },
@@ -34,8 +35,8 @@ export default function(Vue, { head }) {
 		{ rel: 'icon', type: 'image/svg+xml', sizes: '32x32', href: '/favicon.svg' },
 		{ rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: site.color.primary },
 		{ rel: 'manifest', href: '/site.webmanifest' },
-		{ rel: 'preload', href: '~/assets/fonts/Inter.roman.woff2' },
-		{ rel: 'preload', href: '~/assets/fonts/Inter.italic.woff2' },
+		{ rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.woff2' },
+		{ rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.woff2' },
 		// { rel: 'preconnect', href: 'https://www.google-analytics.com' },
 		{ rel: 'preconnect', href: site.url },
 		{ rel: 'canonical', href: site.url }

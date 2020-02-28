@@ -44,8 +44,7 @@ module.exports = {
 	siteUrl: site.url,
 
 	templates: {
-		Work: '/work/:slug',
-		Tag: '/work/tag/:id'
+		Work: '/work/:slug'
 	},
 
 	plugins: [

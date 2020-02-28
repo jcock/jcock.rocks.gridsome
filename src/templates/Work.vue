@@ -2,21 +2,17 @@
 	<article>
 		<figure>
       	<g-image :alt="$page.work.title" v-if="$page.work.cover" :src="$page.work.cover" />
+			<figcaption>{{ $page.work.title }}</figcaption>
 		</figure>
 
 		<header>
 			<h1>{{ $page.work.title }}</h1>
+			<ul>
+				<li v-for="tag in $page.work.tags" :key="tag.id">{{ tag.title }}</li>
+			</ul>
 		</header>
 
 		<main v-html="$page.work.content" />
-
-		<footer>
-			<ul>
-				<li v-for="tag in $page.work.tags" :key="tag.id">
-					<g-link :to="`${tag.path}/`">{{ tag.title }}</g-link>
-				</li>
-			</ul>
-		</footer>
 	</article>
 </template>
 
@@ -54,7 +50,6 @@ query Work ($path: String) {
 		tags {
 			id
 			title
-			path
 		}
 	}
 }
