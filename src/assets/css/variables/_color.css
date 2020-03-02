@@ -42,8 +42,8 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bodyBg: var(--grayDarkest);
-		--bodyColor: var(--white);
+		--bodyColor: var(--grayLight);
 
-		--linkHoverColor: var(--grayLight);
+		--linkHoverColor: var(--white);
 	}
 }

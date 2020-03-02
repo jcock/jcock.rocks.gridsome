@@ -1,46 +1,36 @@
 <template>
 	<Layout>
-		<h1>Hello, world!</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
-		<ul class="home-links">
-			<li><a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a></li>
-			<li><a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a></li>
-		</ul>
+		<h1 class="intro">I’m Jason Cockerham and I make internets.</h1>
 
-		<hr>
-
-		<div class="grid">
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
-			<figure class="item"><g-image src="https://picsum.photos/800/600" /></figure>
+		<div class="posts">
+			<PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
 		</div>
-
-		<hr>
-
-		<PostList v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
 	</Layout>
 </template>
 
 <script>
-import PostList from '~/components/PostList.vue';
+import PostCard from '~/components/PostCard.vue';
 
 export default {
 	name: 'Home',
 	components: {
-		PostList
+		PostCard
 	}
 }
 </script>
 
 <style scoped>
-.grid {
+.intro {
+	color: var(--grayLight);
+	font-size: var(--step-0);
+	font-weight: var(--fontWeightNormal);
+
+	@media screen and (min-width: 62rem) {
+		margin-left: calc(50% + 1rem);
+	}
+}
+
+.posts {
 	display: grid;
 	grid-auto-flow: dense;
 	grid-gap: 1rem;
@@ -49,10 +39,6 @@ export default {
 	@media screen and (min-width: 62rem) {
 		grid-template-columns: repeat(4, 1fr);
 	}
-}
-
-.item {
-	margin: 0;
 }
 </style>
 
@@ -66,7 +52,7 @@ query {
 				date (format: "D. MMMM YYYY")
 				roles
 				exerpt
-				cover(width: 640, height: 360, quality: 90, fit: contain)
+				cover (width: 640, height: 480, quality: 90, fit: contain)
 				path
 			}
 		}

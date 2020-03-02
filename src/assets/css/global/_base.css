@@ -20,7 +20,7 @@ body {
 	color: var(--bodyColor);
 	font-family: var(--fontBase);
 	font-size: var(--fontSizeBase);
-	font-weight: 400;
+	font-weight: var(--fontWeightNormal);
 	line-height: var(--lineHeightBase);
 	margin: 0;
 	overflow-x: hidden;
