@@ -33,11 +33,6 @@ import PostList from '~/components/PostList.vue';
 
 export default {
 	name: 'Home',
-	metaInfo: {
-		bodyAttrs: {
-			style: '--scrollY: 1'
-		}
-	},
 	components: {
 		PostList
 	}
