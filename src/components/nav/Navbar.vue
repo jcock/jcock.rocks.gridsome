@@ -5,8 +5,8 @@
 		</g-link>
 
 		<ol class="nav">
-			<li><g-link class="nav__link" to="/">Home</g-link></li>
-			<li><g-link class="nav__link" to="/about/">About</g-link></li>
+			<li><g-link class="link" to="/">Work</g-link></li>
+			<li><g-link class="link" to="/about/">About</g-link></li>
 		</ol>
 	</nav>
 </template>
@@ -24,30 +24,39 @@ export default {
 
 <style scoped>
 .navbar {
-	align-items: center;
+	align-items: start;
 	display: grid;
-	grid-template-columns: 1fr auto;
-	justify-content: space-between;
+	font-size: var(--step--1);
+	grid-gap: var(--step-0);
+	grid-template-columns: repeat(2, 1fr);
 	margin-bottom: 1rem;
 	padding: 1rem var(--step-3);
 }
 
 .nav {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
 
-	& li {
-		margin: 0 0.5rem;
+.link {
+	color: #fff;
+	display: inline-block;
+	opacity: 0.5;
+	padding: 0.25rem 0;
+	transition: opacity var(--transitionTimingBase) ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		opacity: 1;
 	}
 }
 
 .brand {
 	color: #fff;
 	display: block;
+	margin-top: 0.65rem;
 	opacity: 0.5;
 	transition: opacity var(--transitionTimingBase) ease-in-out;
 	width: var(--step-4);

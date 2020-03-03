@@ -19,12 +19,9 @@ export default {
 </script>
 
 <style scoped>
-.link {
-	display: inline-block;
-}
-
 .cover {
 	margin: 0;
+	transition: opacity var(--transitionTimingBase) ease-in-out;
 }
 
 .body {
@@ -41,5 +38,17 @@ export default {
 	color: var(--gray);
 	font-size: var(--step--1);
 	margin: 0;
+}
+
+.link {
+	display: block;
+
+	&:hover,
+	&:active,
+	&:focus {
+		& .cover {
+			opacity: 0.5;
+		}
+	}
 }
 </style>

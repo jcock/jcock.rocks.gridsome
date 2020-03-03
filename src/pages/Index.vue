@@ -24,19 +24,22 @@ export default {
 	color: var(--grayLight);
 	font-size: var(--step-0);
 	font-weight: var(--fontWeightNormal);
+	margin-bottom: var(--step-6);
 
-	@media screen and (min-width: 62rem) {
+	@media screen and (min-width: 54rem) {
 		margin-left: calc(50% + 1rem);
 	}
 }
 
 .posts {
-	display: grid;
-	grid-auto-flow: dense;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	@media screen and (min-width: 54rem) {
+		display: grid;
+		grid-auto-flow: dense;
+		grid-gap: var(--step-0);
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-	@media screen and (min-width: 62rem) {
+	@media screen and (min-width: 90rem) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
@@ -52,7 +55,7 @@ query {
 				date (format: "D. MMMM YYYY")
 				roles
 				exerpt
-				cover (width: 640, height: 480, quality: 90, fit: contain)
+				cover (width: 770, height: 575, quality: 90, fit: contain)
 				path
 			}
 		}

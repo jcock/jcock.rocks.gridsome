@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-	transition: opacity 200ms ease-in-out;
+	transition: opacity var(--transitionTimingMed) ease-in-out;
 }
 
 .fade-enter,
