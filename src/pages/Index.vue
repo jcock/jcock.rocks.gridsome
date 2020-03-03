@@ -5,7 +5,7 @@
 		</transition>
 
 		<transition-group name="staggered" tag="section" class="posts" role="list" appear>
-			<PostCard v-for="(edge, index) in $page.posts.edges" :key="edge.node.id" :post="edge.node" :style="{ transitionDelay: index + '00ms' }" role="listitem" />
+			<PostCard v-for="(edge, index) in $page.posts.edges" :key="edge.node.id" :post="edge.node" :style="{ transitionDelay: `${index}00ms` }" role="listitem" />
 		</transition-group>
 	</layout>
 </template>
