@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 				'./src/**/*.pug',
 				'./src/**/*.md'
 			],
-			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loaded'],
+			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loading', 'g-image--loaded'],
 			whitelistPatterns: [/^active/, /^is--/, /^js--/, /^fade-/]
 		})
 	);

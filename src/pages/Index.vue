@@ -55,7 +55,7 @@ query {
 				date (format: "D. MMMM YYYY")
 				roles
 				exerpt
-				cover (width: 770, height: 575, quality: 90, fit: contain)
+				cover (width: 770, height: 575, quality: 90, fit: inside)
 				path
 			}
 		}

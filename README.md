@@ -5,6 +5,25 @@ User Experience Designer and Front-End Developer.
 
 ---
 
+## TODO
+
+* Page transitions
+* 404 page
+* Fonts?
+* Use different analytics tool (Netlify?)
+    * Remove Google Analytics
+
+### Issues
+
+* Why are images *popping* in when loaded?
+* Critical CSS (not working on home page)
+
+### Test
+
+* Workbox service worker
+
+---
+
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg?style=for-the-badge)](http://unlicense.org/)
 
 ---

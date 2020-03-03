@@ -3,8 +3,21 @@ img {
 	max-width: 100%;
 	height: auto;
 	-ms-interpolation-mode: bicubic;
+
+	&[src*='svg'] {
+		max-height: 100%;
+	}
 }
 
-img[src*='svg'] {
-	max-height: 100%;
+/* Lazyload */
+.g-image--lazy,
+.g-image--loading {
+	opacity: 0.25;
+	transition: opacity 1200ms ease;
+	will-change: opacity;
+}
+
+.g-image--loaded {
+	opacity: 1;
+	transition: opacity 1200ms ease;
 }
