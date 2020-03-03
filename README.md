@@ -9,9 +9,14 @@ User Experience Designer and Front-End Developer.
 
 * Page transitions
 * 404 page
+* Colophon page
 * Fonts?
 * Use different analytics tool (Netlify?)
     * Remove Google Analytics
+
+### Functionality
+
+* Add aria-current to vue router link
 
 ### Issues
 

@@ -1,11 +1,11 @@
 <template>
-	<Layout>
+	<layout>
 		<h1 class="intro">I’m Jason Cockerham and I make internets.</h1>
 
-		<div class="posts">
-			<PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
-		</div>
-	</Layout>
+		<section class="posts" role="list">
+			<PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" role="listitem" />
+		</section>
+	</layout>
 </template>
 
 <script>

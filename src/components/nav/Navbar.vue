@@ -15,7 +15,7 @@
 import Jcock from '~/assets/img/brand/jcock.svg';
 
 export default {
-	name: 'Navbar',
+	name: 'NavBar',
 	components: {
 		Jcock
 	}
@@ -29,8 +29,12 @@ export default {
 	font-size: var(--step--1);
 	grid-gap: var(--step-0);
 	grid-template-columns: repeat(2, 1fr);
-	margin-bottom: 1rem;
-	padding: 1rem var(--step-3);
+	margin-bottom: var(--step-6);
+	padding: var(--step-0) var(--step-3);
+
+	@media screen and (min-width: 54rem) {
+		font-size: var(--step--2);
+	}
 }
 
 .nav {
@@ -41,10 +45,15 @@ export default {
 
 .link {
 	color: #fff;
-	display: inline-block;
+	display: block;
 	opacity: 0.5;
-	padding: 0.25rem 0;
+	padding: calc(var(--step-0) / 2) 0;
 	transition: opacity var(--transitionTimingBase) ease-in-out;
+
+	@media screen and (min-width: 54rem) {
+		display: inline-block;
+		padding: calc(var(--step-0) / 4) 0;
+	}
 
 	&:hover,
 	&:active,
@@ -56,10 +65,15 @@ export default {
 .brand {
 	color: #fff;
 	display: block;
-	margin-top: 0.65rem;
+	margin-top: 1rem;
 	opacity: 0.5;
 	transition: opacity var(--transitionTimingBase) ease-in-out;
-	width: var(--step-4);
+	width: var(--step-6);
+
+	@media screen and (min-width: 54rem) {
+		margin-top: 0.65rem;
+		width: var(--step-3);
+	}
 
 	& .o,
 	& .c2,

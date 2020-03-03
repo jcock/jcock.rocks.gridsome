@@ -1,19 +1,29 @@
 <template>
 	<header class="header" id="top" role="banner">
 		<anchor to="#main" classes="btn--skip sr-focusable">Skip to main content</anchor>
-		<navbar />
+		<nav-bar />
 	</header>
 </template>
 
 <script>
 import Anchor from '@/components/nav/Anchor';
-import Navbar from '@/components/nav/Navbar';
+import NavBar from '@/components/nav/Navbar';
 
 export default {
 	name: 'LayoutHeader',
 	components: {
 		Anchor,
-		Navbar
+		NavBar
 	}
 }
 </script>
+
+<style scoped>
+.btn--skip {
+	left: 1rem;
+	padding: 0.5rem 1rem;
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+}
+</style>
