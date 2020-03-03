@@ -1,8 +1,8 @@
 <template>
-<header class="header" id="top" role="banner">
-	<anchor to="#main" classes="btn--skip sr-focusable">Skip to main content</anchor>
-	<navbar />
-</header>
+	<header class="header" id="top" role="banner">
+		<anchor to="#main" classes="btn--skip sr-focusable">Skip to main content</anchor>
+		<navbar />
+	</header>
 </template>
 
 <script>

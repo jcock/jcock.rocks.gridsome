@@ -33,7 +33,8 @@
 		"@gridsome/transformer-remark": "^0.4.0",
 		"gridsome": "^0.7.0",
 		"gridsome-plugin-service-worker": "^0.1.4",
-		"sanitize.css": "^11.0.0"
+		"sanitize.css": "^11.0.0",
+		"vue-fragment": "^1.5.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.6",

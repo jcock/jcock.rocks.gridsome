@@ -1,20 +1,22 @@
 <template>
-	<div>
+	<fragment>
 		<layout-header />
 		<transition name="fade" mode="out-in" appear>
 			<router-view />
 		</transition>
 		<layout-footer />
-	</div>
+	</fragment>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment';
 import site from '@/data/site.json';
 import LayoutHeader from '@/components/layout/LayoutHeader';
 import LayoutFooter from '@/components/layout/LayoutFooter';
 
 export default {
 	components: {
+		Fragment,
 		LayoutHeader,
 		LayoutFooter
 	}

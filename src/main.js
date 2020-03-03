@@ -1,3 +1,5 @@
+import Fragment from 'vue-fragment';
+
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
 
@@ -6,6 +8,7 @@ import '~/assets/css/app.css';
 
 export default function(Vue, { head }) {
 	Vue.component('Layout', Default);
+	Vue.use(Fragment);
 
 	head.htmlAttrs = { lang: 'en' };
 	head.siteName = site.name;
