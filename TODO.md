@@ -8,6 +8,7 @@
 * Fonts?
 * Use different analytics tool (Netlify?)
     * Remove Google Analytics
+* Rename Github repo
 
 ### Functionality
 

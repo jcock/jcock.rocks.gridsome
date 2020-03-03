@@ -51,4 +51,14 @@ export default {
 		}
 	}
 }
+
+.shit-enter-active,
+.shit-leave-active {
+	transition: transform 5s ease-in-out;
+}
+
+.shit-enter,
+.shit-leave-to {
+	transform: scale(0.1);
+}
 </style>

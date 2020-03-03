@@ -1,10 +1,12 @@
 <template>
 	<layout>
-		<h1 class="intro">I’m Jason Cockerham and I make internets.</h1>
+		<transition name="in-up" mode="out-in" appear>
+			<h1 class="intro">I’m Jason Cockerham and I make internets.</h1>
+		</transition>
 
-		<section class="posts" role="list">
-			<PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" role="listitem" />
-		</section>
+		<transition-group name="staggered" tag="section" class="posts" role="list" appear>
+			<PostCard v-for="(edge, index) in $page.posts.edges" :key="edge.node.id" :post="edge.node" :style="{ transitionDelay: index + '00ms' }" role="listitem" />
+		</transition-group>
 	</layout>
 </template>
 
@@ -31,6 +33,17 @@ export default {
 	}
 }
 
+.in-up-enter-active,
+.in-up-leave-active {
+	transition: opacity var(--transitionTimingMed) ease-in-out, transform var(--transitionTimingMed) ease-in-out;
+}
+
+.in-up-enter,
+.in-up-leave-to {
+	opacity: 0;
+	transform: translateY(10%);
+}
+
 .posts {
 	@media screen and (min-width: 54rem) {
 		display: grid;
@@ -42,6 +55,16 @@ export default {
 	@media screen and (min-width: 90rem) {
 		grid-template-columns: repeat(4, 1fr);
 	}
+}
+
+.staggered-enter-active,
+.staggered-leave-active {
+	transition: opacity var(--transitionTimingMed) ease-in-out;
+}
+
+.staggered-enter,
+.staggered-leave-to {
+	opacity: 0;
 }
 </style>
 
