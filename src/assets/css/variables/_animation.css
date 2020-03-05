@@ -1,5 +1,13 @@
 :root {
-	--transitionTimingBase: 150ms;
-	--transitionTimingMed: 450ms;
-	--transitionTimingSlow: 900ms;
+	--easeBounce: cubic-bezier(0.25, 0.1, 0, 2.05);
+	--easePrimary: cubic-bezier(0.51, 0.11, 0.59, 0.92);
+	--easeOutPrimary: cubic-bezier(0.2, 0.42, 0.59, 0.92);
+	--easeInPrimary: cubic-bezier(0.55, 0.12, 1, 1);
+	--ease: cubic-bezier(0.43, 0.11, 0.41, 1);
+	--easingCirc: cubic-bezier(0.075, 0.82, 0.165, 0);
+
+	--timingBase: 150ms;
+	--timingSm: 450ms;
+	--timingMd: 600ms;
+	--timingLg: 900ms;
 }

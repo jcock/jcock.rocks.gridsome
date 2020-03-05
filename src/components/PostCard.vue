@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .cover {
 	margin: 0;
-	transition: opacity var(--transitionTimingBase) ease-in-out;
+	transition: opacity var(--timingBase) ease-in-out;
 }
 
 .body {
@@ -49,16 +49,10 @@ export default {
 		& .cover {
 			opacity: 0.5;
 		}
+
+		& .title {
+			color: var(--linkHoverColor);
+		}
 	}
-}
-
-.shit-enter-active,
-.shit-leave-active {
-	transition: transform 5s ease-in-out;
-}
-
-.shit-enter,
-.shit-leave-to {
-	transform: scale(0.1);
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
 	<nav role="navigation">
-		<ol class="nav">
+		<ul class="nav">
 			<li><g-link class="link" to="/">Work</g-link></li>
 			<li><g-link class="link" to="/about/">About</g-link></li>
 			<li><a class="link" href="#">Email</a></li>
 			<li><g-link class="link" to="/colophon/">Colophon</g-link></li>
 			<li><anchor to="#top" classes="btn--top" aria-label="Back to the top">↑</anchor></li>
-		</ol>
+		</ul>
 	</nav>
 </template>
 
@@ -65,7 +65,7 @@ li {
 	line-height: calc(var(--fluid-min-scale-1) * 1);
 	opacity: 0.5;
 	padding: calc(var(--step-0) / 2) calc(var(--step-0) / 2);
-	transition: opacity var(--transitionTimingBase) ease-in-out;
+	transition: opacity var(--timingBase) ease-in-out;
 
 	@media screen and (min-width: 54rem) {
 		display: inline-block;
@@ -85,7 +85,7 @@ li {
 	line-height: 1;
 	opacity: 0.5;
 	padding: var(--step--2) var(--step-0);
-	transition: color var(--transitionTimingBase) ease-in-out, opacity var(--transitionTimingBase) ease-in-out;
+	transition: color var(--timingBase) ease-in-out, opacity var(--timingBase) ease-in-out;
 
 	@media screen and (min-width: 54rem) {
 		font-size: var(--step-0);

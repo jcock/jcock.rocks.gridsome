@@ -11,7 +11,6 @@
 	--purple: #613d7c;
 
 	--blackOff: #0d0d0d;
-	/* --grayDarkest: #181818; */
 	--grayDarkest: #111315;
 	--grayDark: #292b2c;
 	--gray: #464a4c;
@@ -26,24 +25,33 @@
 	--brandDanger: var(--pink);
 	--brandInverse: var(--grayDark);
 
-	--bodyBg: var(--white);
-	--bodyColor: var(--grayDarkest);
+	--bodyBg: var(--grayDarkest);
+	--bodyColor: var(--grayLight);
 
 	--selectionBg: var(--brandPrimary);
 	--selectionColor: var(--white);
 
 	--linkColor: var(--bodyColor);
-	--linkHoverColor: var(--gray);
+	--linkHoverColor: var(--white);
 }
 
 /* DARK MODE
  * ------------------------------ */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
-		--bodyBg: var(--grayDarkest);
-		--bodyColor: var(--grayLight);
+		--bodyBg: var(--white);
+		--bodyColor: var(--grayDarkest);
 
-		--linkHoverColor: var(--white);
+		--linkColor: var(--bodyColor);
+		--linkHoverColor: var(--gray);
 	}
+}
+
+body[data-theme='light'] {
+	--bodyBg: var(--white);
+	--bodyColor: var(--grayDarkest);
+
+	--linkColor: var(--bodyColor);
+	--linkHoverColor: var(--gray);
 }

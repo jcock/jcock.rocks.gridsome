@@ -9,6 +9,10 @@ img {
 	}
 }
 
+svg:not([fill]) {
+	fill: currentColor;
+}
+
 /* Lazyload */
 .g-image--lazy,
 .g-image--loading {

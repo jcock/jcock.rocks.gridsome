@@ -1,3 +1,4 @@
+const path = require('path');
 const cssImport = require('postcss-import');
 const presetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano');
