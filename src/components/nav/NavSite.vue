@@ -3,7 +3,6 @@
 		<ul class="nav">
 			<li><g-link class="link" to="/">Work</g-link></li>
 			<li><g-link class="link" to="/about/">About</g-link></li>
-			<!-- <li><a class="link" href="mailto:jason@jcock.rocks">Email</a></li> -->
 			<li><a class="link" :href="`mailto:${contactEmail}`">Email</a></li>
 			<li><g-link class="link" to="/colophon/">Colophon</g-link></li>
 			<li><theme-toggle /></li>
@@ -15,7 +14,7 @@
 <script>
 import site from '@/data/site.json';
 import Anchor from '@/components/nav/Anchor';
-import ThemeToggle from '@/components/theme/ThemeToggle.vue';
+import ThemeToggle from '@/components/ThemeToggle.vue';
 
 export default {
 	name: 'NavSite',
