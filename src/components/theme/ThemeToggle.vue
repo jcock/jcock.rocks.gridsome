@@ -1,6 +1,6 @@
 <template>
 	<button
-		:aria-label="`Tmeme mode set to ${themeDark ? 'dark' : 'light'}`"
+		:aria-label="`Theme mode set to ${themeDark ? 'dark' : 'light'}`"
 		:aria-pressed="themeDark"
 		class="toggle"
 		@click.prevent="toggleTheme"
