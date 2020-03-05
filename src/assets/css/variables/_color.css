@@ -33,6 +33,8 @@
 
 	--linkColor: var(--bodyColor);
 	--linkHoverColor: var(--white);
+
+	--navLinkColor: var(--white);
 }
 
 /* DARK MODE
@@ -54,4 +56,6 @@ body[data-theme='light'] {
 
 	--linkColor: var(--bodyColor);
 	--linkHoverColor: var(--gray);
+
+	--navLinkColor: var(--blackOff);
 }

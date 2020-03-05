@@ -1,6 +1,6 @@
 <template>
 	<button
-		:aria-label="`Theme mode set to ${themeDark ? 'dark' : 'light'}`"
+		:aria-label="`Theme set to ${themeDark ? 'dark' : 'light'}`"
 		:aria-pressed="themeDark"
 		class="toggle"
 		@click.prevent="toggleTheme"
@@ -39,8 +39,6 @@ export default {
 	border: 0;
 	color: var(--bodyColor);
 	cursor: pointer;
-	padding: 0;
-	position: relative;
-	transition: all var(--timingBase) var(--easePrimary);
+	transition: color var(--timingBase) var(--easePrimary);
 }
 </style>

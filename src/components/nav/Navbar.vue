@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Jcock from '~/assets/img/brand/jcock.svg';
+import Jcock from '@/assets/img/brand/jcock.svg';
 
 export default {
 	name: 'NavBar',
@@ -44,7 +44,7 @@ export default {
 }
 
 .link {
-	color: #fff;
+	color: var(--navLinkColor);
 	display: block;
 	opacity: 0.5;
 	padding: calc(var(--step-0) / 2) 0;
@@ -63,7 +63,7 @@ export default {
 }
 
 .brand {
-	color: #fff;
+	color: var(--navLinkColor);
 	display: block;
 	margin-top: 1rem;
 	opacity: 0.5;

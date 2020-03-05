@@ -45,3 +45,9 @@ summary,
 textarea {
 	touch-action: manipulation;
 }
+
+/* SENSIBLE DEFAULTS
+ * ------------------------------ */
+nav ul {
+	padding: 0;
+}

@@ -10,7 +10,6 @@
 
 <script>
 import { Fragment } from 'vue-fragment';
-import site from '@/data/site.json';
 import LayoutHeader from '@/components/layout/LayoutHeader';
 import LayoutFooter from '@/components/layout/LayoutFooter';
 

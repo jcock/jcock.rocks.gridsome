@@ -7,20 +7,16 @@
 		<transition-group name="staggered" tag="section" class="posts" role="list" appear>
 			<PostCard v-for="(edge, index) in $page.posts.edges" :key="edge.node.id" :post="edge.node" :style="{ transitionDelay: `${index}00ms` }" role="listitem" />
 		</transition-group>
-
-		<theme-toggle />
 	</layout>
 </template>
 
 <script>
-import PostCard from '~/components/PostCard.vue';
-import ThemeToggle from '~/components/theme/ThemeToggle.vue';
+import PostCard from '@/components/PostCard.vue';
 
 export default {
 	name: 'Home',
 	components: {
-		PostCard,
-		ThemeToggle
+		PostCard
 	}
 }
 </script>
