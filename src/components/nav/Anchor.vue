@@ -1,5 +1,5 @@
 <template>
-	<a :href="to" :tabindex="tabindex" :class="classes">
+	<a href="#" v-scroll-to="`${to}`" :tabindex="tabindex" :class="classes">
 		<slot>{{ text }}</slot>
 	</a>
 </template>
@@ -19,7 +19,6 @@ export default {
 		to: {
 			type: String,
 			default: '#',
-			default: null,
 			required: true
 		},
 		text: {

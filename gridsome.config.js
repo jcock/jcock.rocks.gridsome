@@ -1,10 +1,11 @@
-const path = require('path');
 const cssImport = require('postcss-import');
 const presetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano');
 const purgecss = require('@fullhuman/postcss-purgecss');
 
 const site = require('./src/data/site.json');
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 // PostCSS config
 const postcssPlugins = [
@@ -23,7 +24,7 @@ const postcssPlugins = [
 ];
 
 // PurgeCSS only in production
-if (process.env.NODE_ENV === 'production') {
+if (isProduction) {
 	postcssPlugins.push(
 		purgecss({
 			content: [

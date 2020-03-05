@@ -1,6 +1,6 @@
 <template>
 	<header class="header" id="top" role="banner">
-		<anchor to="#main" classes="btn--skip sr-focusable">Skip to main content</anchor>
+		<anchor to="#main" classes="btn--skip" @click.stop>Skip to main content</anchor>
 		<nav-bar />
 	</header>
 </template>
@@ -25,5 +25,17 @@ export default {
 	position: absolute;
 	top: 0;
 	z-index: 9999;
+
+	&:not(:focus) {
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
 }
 </style>

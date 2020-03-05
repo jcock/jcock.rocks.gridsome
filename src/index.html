@@ -3,7 +3,7 @@
 	<head>
 		${head}
 	</head>
-	<body ${bodyAttrs}>
+	<body itemscope itemtype="http://schema.org/WebPage" ${bodyAttrs}>
 		<script>
 			// Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
 			!function(){function e(e){window.__theme=e,t=e,document.body.setAttribute("data-theme",e),window.__onThemeChange(e)}var t;window.__onThemeChange=function(){};try{t=localStorage.getItem("theme")}catch(e){}window.__setPreferredTheme=function(t){e(t);try{localStorage.setItem("theme",t)}catch(e){}};var n=window.matchMedia("(prefers-color-scheme: dark)");n.addListener(function(e){window.__setPreferredTheme(e.matches?"dark":"light")}),e(t||(n.matches?"dark":"light"))}();

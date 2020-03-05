@@ -21,11 +21,6 @@
 @import 'global/_images.css';
 @import 'global/_buttons.css';
 
-/* UTILITIES
- * ------------------------------ */
-@import 'util/_list-unstyled.css';
-@import 'util/_screen-readers.css';
-
 /* PRINT
  * ------------------------------ */
-@import 'util/_print.css';
+@import 'global/_print.css';

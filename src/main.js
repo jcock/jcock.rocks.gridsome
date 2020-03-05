@@ -1,4 +1,5 @@
 import Fragment from 'vue-fragment';
+import VueScrollTo from 'vue-scrollto';
 
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
@@ -8,8 +9,15 @@ import '~/assets/css/app.css';
 
 export default function(Vue, { head }) {
 	Vue.component('Layout', Default);
-	Vue.use(Fragment);
 
+	// Vue Directives
+	Vue.use(Fragment);
+	Vue.use(VueScrollTo, {
+		duration: 300,
+		easing: 'ease-in-out'
+	});
+
+	// Meta and Attributes
 	head.htmlAttrs = { lang: 'en' };
 	head.siteName = site.name;
 	head.titleTemplate = titleChunk => {
