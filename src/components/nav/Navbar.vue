@@ -48,7 +48,7 @@ export default {
 	display: block;
 	opacity: 0.5;
 	padding: calc(var(--step-0) / 2) 0;
-	transition: opacity var(--timingBase) ease-in-out;
+	transition: opacity var(--timingBase) var(--easePrimary);
 
 	@media screen and (min-width: 54rem) {
 		display: inline-block;
@@ -68,7 +68,7 @@ export default {
 	display: block;
 	margin-top: 1rem;
 	opacity: 0.5;
-	transition: opacity var(--timingBase) ease-in-out;
+	transition: opacity var(--timingBase) var(--easePrimary);
 	width: var(--step-6);
 
 	@media screen and (min-width: 54rem) {
@@ -81,7 +81,7 @@ export default {
 	& .k {
 		opacity: 0;
 		transform: translateY(10%);
-		transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+		transition: opacity 100ms var(--easePrimary), transform 100ms var(--easePrimary);
 	}
 
 	& .o {

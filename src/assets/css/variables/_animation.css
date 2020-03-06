@@ -6,7 +6,7 @@
 	--ease: cubic-bezier(0.43, 0.11, 0.41, 1);
 	--easingCirc: cubic-bezier(0.075, 0.82, 0.165, 0);
 
-	--timingBase: 150ms;
+	--timingBase: 200ms;
 	--timingSm: 450ms;
 	--timingMd: 600ms;
 	--timingLg: 900ms;

@@ -35,7 +35,7 @@ export default {
 
 .in-up-enter-active,
 .in-up-leave-active {
-	transition: opacity var(--timingSm) ease-in-out, transform var(--timingSm) ease-in-out;
+	transition: opacity var(--timingSm) var(--easePrimary), transform var(--timingSm) var(--easePrimary);
 }
 
 .in-up-enter,
@@ -59,7 +59,7 @@ export default {
 
 .staggered-enter-active,
 .staggered-leave-active {
-	transition: opacity var(--timingSm) ease-in-out;
+	transition: opacity var(--timingSm) var(--easePrimary);
 }
 
 .staggered-enter,

@@ -21,23 +21,28 @@ export default {
 <style scoped>
 .cover {
 	margin: 0;
-	transition: opacity var(--timingBase) ease-in-out;
+	transition: opacity var(--timingBase) var(--easePrimary);
 }
 
 .body {
 	padding: var(--step-0) 0;
 }
 
+.title,
+.text {
+	margin: 0;
+	transition: color var(--timingBase) var(--easePrimary);
+}
+
 .title {
+	color: var(--grayLight);
 	font-size: var(--step-0);
 	font-weight: var(--fontWeightNormal);
-	margin: 0;
 }
 
 .text {
 	color: var(--gray);
 	font-size: var(--step--1);
-	margin: 0;
 }
 
 .link {
@@ -52,6 +57,10 @@ export default {
 
 		& .title {
 			color: var(--linkHoverColor);
+		}
+
+		& .text {
+			color: var(--grayLight);
 		}
 	}
 }

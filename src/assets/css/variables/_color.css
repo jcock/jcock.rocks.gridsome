@@ -11,7 +11,8 @@
 	--purple: #613d7c;
 
 	--blackOff: #0d0d0d;
-	--grayDarkest: #111315;
+	/* --grayDarkest: #111315; */
+	--grayDarkest: #181821;
 	--grayDark: #292b2c;
 	--gray: #464a4c;
 	--grayLight: #aaa;
@@ -23,10 +24,10 @@
 	--brandInfo: var(--teal);
 	--brandWarning: var(--orange);
 	--brandDanger: var(--pink);
-	--brandInverse: var(--grayDark);
+	--brandInverse: var(--grayDarkest);
 
 	--bodyBg: var(--grayDarkest);
-	--bodyColor: var(--grayLight);
+	--bodyColor: var(--grayLighter);
 
 	--selectionBg: var(--brandPrimary);
 	--selectionColor: var(--white);

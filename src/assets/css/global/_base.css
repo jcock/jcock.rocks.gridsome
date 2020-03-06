@@ -26,7 +26,7 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
-	transition: background-color var(--timingBase) ease-in-out, color var(--timingBase) ease-in-out;
+	transition: background-color var(--timingBase) var(--easePrimary), color var(--timingBase) var(--easePrimary);
 }
 
 /* GENERAL

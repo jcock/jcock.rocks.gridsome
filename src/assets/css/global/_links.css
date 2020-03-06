@@ -3,7 +3,7 @@ a {
 	color: var(--linkColor);
 	text-decoration: none;
 	text-decoration-skip: edges;
-	transition: color var(--timingBase) ease-in-out;
+	transition: color var(--timingBase) var(--easePrimary);
 
 	&:hover,
 	&:active,
