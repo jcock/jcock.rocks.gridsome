@@ -34,8 +34,7 @@
 		"@zefman/gridsome-source-instagram": "^0.1.2",
 		"gridsome": "^0.7.13",
 		"gridsome-plugin-service-worker": "^0.1.4",
-		"vue-fragment": "^1.5.1",
-		"vue-scrollto": "^2.17.1"
+		"vue-fragment": "^1.5.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.6",

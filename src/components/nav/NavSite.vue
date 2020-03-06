@@ -96,6 +96,7 @@ li {
 		padding: calc(var(--step-0) / 4) calc(var(--step-0) / 3);
 	}
 
+	&.active--exact,
 	&:hover,
 	&:active,
 	&:focus {

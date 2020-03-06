@@ -1,17 +1,21 @@
 <template>
-	<header class="header" id="top" role="banner">
+	<fragment>
 		<anchor to="#main" classes="btn--skip" @click.stop>Skip to main content</anchor>
-		<nav-bar />
-	</header>
+		<header class="header" id="top" role="banner">
+			<nav-bar />
+		</header>
+	</fragment>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment';
 import Anchor from '@/components/nav/Anchor';
 import NavBar from '@/components/nav/Navbar';
 
 export default {
 	name: 'LayoutHeader',
 	components: {
+		Fragment,
 		Anchor,
 		NavBar
 	}
@@ -20,6 +24,8 @@ export default {
 
 <style scoped>
 .btn--skip {
+	background-color: var(--bodyColor);
+	color: var(--bodyBg);
 	left: 1rem;
 	padding: 0.5rem 1rem;
 	position: absolute;

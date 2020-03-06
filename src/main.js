@@ -1,5 +1,4 @@
 import Fragment from 'vue-fragment';
-import VueScrollTo from 'vue-scrollto';
 
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
@@ -12,10 +11,6 @@ export default function(Vue, { head }) {
 
 	// Vue Directives
 	Vue.use(Fragment);
-	Vue.use(VueScrollTo, {
-		duration: 300,
-		easing: 'ease-in-out'
-	});
 
 	// Meta and Attributes
 	head.htmlAttrs = { lang: 'en' };

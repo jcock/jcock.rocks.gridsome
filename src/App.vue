@@ -2,7 +2,7 @@
 	<fragment>
 		<layout-header />
 		<transition name="fade" mode="out-in" appear>
-			<router-view :key="$route.fullPath" />
+			<router-view :key="$route.path" />
 		</transition>
 		<layout-footer />
 	</fragment>

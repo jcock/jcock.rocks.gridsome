@@ -55,6 +55,7 @@ export default {
 		padding: calc(var(--step-0) / 4) 0;
 	}
 
+	&.active--exact,
 	&:hover,
 	&:active,
 	&:focus {
