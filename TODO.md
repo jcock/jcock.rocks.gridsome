@@ -5,6 +5,7 @@
 * Page transitions
 * 404 page
 * Colophon page
+* Uses page
 * Fonts?
 * Use different analytics tool (Netlify?)
     * Remove Google Analytics
@@ -18,8 +19,8 @@
 
 * Cant `rel=preload` font files because they are bein hashed in build
 * Why are images *popping* in when loaded?
-* Critical CSS (not working/Might have to re-install node_modules using windows terminal, not linux. Then run build command.)
 
 ### Test
 
+* Critical CSS needs to be run in PowerShell
 * Workbox service worker

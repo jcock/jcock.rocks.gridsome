@@ -65,7 +65,7 @@ module.exports = {
 		{
 			use: '@gridsome/plugin-critical',
 			options: {
-				paths: ['/**/*'],
+				paths: ['/', '/**/*'],
 				dimensions: [
 					{
 						width: 375,
