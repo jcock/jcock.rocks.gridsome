@@ -39,7 +39,6 @@ if (isProduction) {
 				'./src/**/*.pug',
 				'./src/**/*.md'
 			],
-			// variables: true,
 			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loading', 'g-image--loaded'],
 			whitelistPatterns: [/^active/, /^is--/, /^js--/, /^fade-/]
 		})
