@@ -16,8 +16,9 @@
 
 ### Issues
 
+* Cant `rel=preload` font files because they are bein hashed in build
 * Why are images *popping* in when loaded?
-* Critical CSS (not working)
+* Critical CSS (not working/Might have to re-install node_modules using windows terminal, not linux. Then run build command.)
 
 ### Test
 

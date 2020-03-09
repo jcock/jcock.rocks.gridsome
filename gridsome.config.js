@@ -11,7 +11,10 @@ const isProduction = process.env.NODE_ENV === 'production';
 const postcssPlugins = [
 	cssImport(),
 	presetEnv({
-		stage: 1
+		stage: 0,
+		features: {
+			'custom-properties': false
+		}
 	}),
 	cssnano({
 		preset: [
@@ -36,6 +39,7 @@ if (isProduction) {
 				'./src/**/*.pug',
 				'./src/**/*.md'
 			],
+			// variables: true,
 			whitelist: ['body', 'html', 'img', 'a', 'g-image', 'g-image--lazy', 'g-image--loading', 'g-image--loaded'],
 			whitelistPatterns: [/^active/, /^is--/, /^js--/, /^fade-/]
 		})
@@ -73,10 +77,6 @@ module.exports = {
 						height: 900
 					}
 				]
-				// width: 1300,
-				// height: 900
-				// width: 375,
-				// height: 812
 			}
 		},
 		{
