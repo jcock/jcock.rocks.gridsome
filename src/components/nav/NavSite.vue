@@ -5,6 +5,7 @@
 			<li><g-link class="link" to="/about/">About</g-link></li>
 			<li><a class="link" :href="`mailto:${contactEmail}`">Email</a></li>
 			<li><g-link class="link" to="/colophon/">Colophon</g-link></li>
+			<li><g-link class="link" to="/uses/">Uses</g-link></li>
 			<li><theme-toggle /></li>
 			<li><anchor to="#top" classes="btn--top" aria-label="Back to the top">↑</anchor></li>
 		</ul>
@@ -32,6 +33,7 @@ export default {
 
 <style scoped>
 .nav {
+	align-items: end;
 	display: grid;
 	font-size: var(--step--1);
 	grid-gap: 0 var(--step-0);
@@ -46,7 +48,7 @@ export default {
 }
 
 li {
-	&:nth-of-type(-n+2) {
+	&:nth-of-type(-n+3) {
 		grid-column: 1 / 2;
 
 		@media screen and (min-width: 54rem) {
@@ -54,19 +56,11 @@ li {
 		}
 	}
 
-	&:nth-of-type(n+3) {
+	&:nth-of-type(n+4) {
 		grid-column: 2 / 3;
 
 		@media screen and (min-width: 54rem) {
 			grid-column: 3 / 4;
-		}
-	}
-
-	&:nth-of-type(odd) {
-		margin-top: calc(var(--step-0) / 4);
-
-		@media screen and (min-width: 54rem) {
-			margin-top: calc(var(--step-0) / 3);
 		}
 	}
 
@@ -114,7 +108,7 @@ li {
 
 	@media screen and (min-width: 54rem) {
 		font-size: var(--step-0);
-		padding: calc(var(--step-0) / 2) var(--step--2);
+		padding: calc(var(--step--2) / 4) var(--step--2);
 	}
 
 	&:hover,

@@ -14,26 +14,16 @@
 		</section>
 
 		<section class="awards">
-			<h2>A little recognition</h2>
-			<ul class="awards--list">
-				<li class="award">
-					<webby />
-				</li>
-				<li class="award">
-					<addy />
-				</li>
-				<li class="award">
-					<web-award />
-				</li>
-			</ul>
+			<div class="content">
+				<h2 class="title">A little recognition</h2>
+				<awards-list />
+			</div>
 		</section>
 	</layout>
 </template>
 
 <script>
-import Webby from '@/assets/img/awards/webby.svg';
-import Addy from '@/assets/img/awards/addy.svg';
-import WebAward from '@/assets/img/awards/webaward.svg';
+import AwardsList from '@/components/AwardsList';
 
 export default {
 	name: 'About',
@@ -41,9 +31,7 @@ export default {
 		title: 'About'
 	},
 	components: {
-		Webby,
-		Addy,
-		WebAward
+		AwardsList
 	}
 }
 </script>
@@ -57,7 +45,7 @@ export default {
 
 	@media screen and (min-width: 62rem) {
 		align-items: stretch;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: 6fr 1fr 5fr;
 		justify-items: start;
 	}
 }
@@ -69,8 +57,9 @@ export default {
 	z-index: 2;
 
 	@media screen and (min-width: 62rem) {
-		grid-area: 1 / 7 / 2 / 13;
+		grid-area: 1 / 2 / 2 / 5;
 		max-width: 45rem;
+		padding-left: var(--step-0);
 	}
 }
 
@@ -84,7 +73,7 @@ export default {
 	width: 100%;
 
 	@media screen and (min-width: 62rem) {
-		grid-area: 1 / 1 / 2 / 8;
+		grid-area: 1 / 1 / 2 / 3;
 		opacity: 0.33;
 	}
 }
@@ -96,14 +85,25 @@ export default {
 	width: 100%;
 }
 
-.awards--list {
-	list-style: none;
-	padding: 0;
+.awards {
+	margin-top: var(--step-6);
 
-	li {
-		&::before {
-			content: "\200B";
-			position: absolute;
+	@media screen and (min-width: 62rem) {
+		display: grid;
+		grid-gap: var(--step-0);
+		grid-template: auto / repeat(2, 1fr);
+	}
+
+	& .content {
+		grid-column: 2 / 3;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 38rem;
+
+		@media screen and (min-width: 62rem) {
+			max-width: 45rem;
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 }
