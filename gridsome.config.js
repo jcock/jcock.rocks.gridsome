@@ -1,5 +1,5 @@
 const cssImport = require('postcss-import');
-const presetEnv = require('postcss-preset-env');
+// const presetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano');
 const purgecss = require('@fullhuman/postcss-purgecss');
 
@@ -10,12 +10,12 @@ const isProduction = process.env.NODE_ENV === 'production';
 // PostCSS config
 const postcssPlugins = [
 	cssImport(),
-	presetEnv({
-		stage: 0,
-		features: {
-			'custom-properties': false
-		}
-	}),
+	// presetEnv({
+	// 	stage: 0,
+	// 	features: {
+	// 		'custom-properties': false
+	// 	}
+	// }),
 	cssnano({
 		preset: [
 			'default',

@@ -11,10 +11,14 @@
 	--fluid-max-ratio: 1.25;
 
 	--fluid-screen: 100vw;
-	--fluid-bp: calc(
+	/* --fluid-bp: calc(
 		(var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
 			((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
-	);
+	); */
+
+	/* stylelint-disable */
+	--fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
+	/* --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width)/16*1rem)/(var(--fluid-max-width) - var(--fluid-min-width))); */
 }
 
 /* stylelint-disable no-duplicate-selectors */
