@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .footer {
-	padding: var(--step-6) var(--step-3) var(--step-0);
+	padding: calc(var(--step-6) * 2) var(--step-3) var(--step-0);
 }
 
 .copyright {

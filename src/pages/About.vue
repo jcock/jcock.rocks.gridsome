@@ -106,5 +106,10 @@ export default {
 			margin-right: 0;
 		}
 	}
+
+	& .title {
+		font-size: var(--step-1);
+		margin-bottom: var(--step-3);
+	}
 }
 </style>
