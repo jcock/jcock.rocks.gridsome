@@ -24,24 +24,13 @@ export default {
 <style scoped>
 .intro {
 	color: var(--grayLight);
-	font-size: var(--step-0);
+	font-size: var(--step-1);
 	font-weight: var(--fontWeightNormal);
 	margin-bottom: var(--step-6);
 
 	@media screen and (min-width: 54rem) {
 		margin-left: calc(50% + 1rem);
 	}
-}
-
-.in-up-enter-active,
-.in-up-leave-active {
-	transition: opacity var(--timingSm) var(--easePrimary), transform var(--timingSm) var(--easePrimary);
-}
-
-.in-up-enter,
-.in-up-leave-to {
-	opacity: 0;
-	transform: translateY(10%);
 }
 
 .posts {
@@ -55,6 +44,18 @@ export default {
 	@media screen and (min-width: 90rem) {
 		grid-template-columns: repeat(4, 1fr);
 	}
+}
+
+/* Animations */
+.in-up-enter-active,
+.in-up-leave-active {
+	transition: opacity var(--timingSm) var(--easePrimary), transform var(--timingSm) var(--easePrimary);
+}
+
+.in-up-enter,
+.in-up-leave-to {
+	opacity: 0;
+	transform: translateY(10%);
 }
 
 .staggered-enter-active,
