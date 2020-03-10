@@ -14,17 +14,9 @@
 	--calc-max-width: calc(var(--fluid-max-width) / 16);
 
 	--fluid-screen: 100vw;
-	/* --fluid-bp: calc(
-		(var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
-			((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
-	); */
-
-	/* --fluid-bp: calc((var(--fluid-screen) - ((320 / 16) * 1rem)) / ((1440 / 16) - (320 / 16))); */
 	--fluid-bp: calc(
 		(var(--fluid-screen) - (var(--calc-min-width) * 1rem)) / (var(--calc-max-width) - var(--calc-min-width))
 	);
-
-	/* --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))); */
 }
 
 /* stylelint-disable no-duplicate-selectors */
