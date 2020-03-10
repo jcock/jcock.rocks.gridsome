@@ -28,4 +28,5 @@
 ### Launch
 
 * Rename Github repo
+* Update repo settings in Netlify
 * Critical CSS needs to be run in PowerShell
