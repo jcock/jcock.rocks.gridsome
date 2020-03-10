@@ -11,42 +11,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 const postcssPlugins = [
 	cssImport(),
 	presetEnv({
-		stage: 0,
+		stage: 1,
 		features: {
-			// 'custom-properties': false
-			'all-property': false,
-			'any-link-pseudo-class': false,
-			'blank-pseudo-class': false,
-			'break-properties': false,
-			'case-insensitive-attributes': false,
-			'color-functional-notation': false,
-			'color-mod-function': false,
-			'custom-media-queries': false,
-			'custom-properties': false,
-			'custom-selectors': false,
-			'dir-pseudo-class': false,
-			'double-position-gradients': false,
-			'environment-variables': false,
-			'focus-visible-pseudo-class': false,
-			'focus-within-pseudo-class': false,
-			'font-variant-property': false,
-			'gap-properties': false,
-			'gray-function': false,
-			'has-pseudo-class': false,
-			'hexadecimal-alpha-notation': false,
-			'image-set-function': false,
-			'lab-function': false,
-			'logical-properties-and-values': false,
-			'matches-pseudo-class': false,
-			'media-query-ranges': false,
-			'nesting-rules': false,
-			'not-pseudo-class': false,
-			'overflow-property': false,
-			'overflow-wrap-property': false,
-			'place-properties': false,
-			'prefers-color-scheme-query': false,
-			'rebeccapurple-color': false,
-			'system-ui-font-family': false
+			'custom-properties': false
 		}
 	}),
 	cssnano({
