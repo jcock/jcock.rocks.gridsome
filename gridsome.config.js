@@ -98,7 +98,7 @@ module.exports = {
 				},
 				cacheFirst: {
 					cacheName: 'jc.statics',
-					routes: [/\.(?:woff|woff2|png|gif|jpg|jpeg|webp|svg)$/]
+					routes: [/\.(?:woff|woff2|png|gif|jpg|jpeg|webp|svg|webmanifest)$/]
 				}
 			}
 		}
