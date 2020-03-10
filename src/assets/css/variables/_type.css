@@ -6,6 +6,7 @@
 	--fontBase: var(--fontSansSerif);
 
 	--fontSizeBase: var(--step-0);
+	/* --fontSizeBase: min(max(16px, 2vw), 26px); */
 	--lineHeightBase: calc(var(--fluid-min-scale-2) * 1);
 	--letterSpacingBase: calc(var(--fontSizeBase) * 0.0015);
 

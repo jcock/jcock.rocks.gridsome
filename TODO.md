@@ -9,7 +9,6 @@
 * Fonts?
 * Use different analytics tool (Netlify?)
     * Remove Google Analytics
-* Rename Github repo
 
 ### Functionality
 
@@ -22,5 +21,11 @@
 
 ### Test
 
-* Critical CSS needs to be run in PowerShell
 * Workbox service worker
+
+---
+
+### Launch
+
+* Rename Github repo
+* Critical CSS needs to be run in PowerShell
