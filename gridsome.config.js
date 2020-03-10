@@ -8,21 +8,31 @@ const site = require('./src/data/site.json');
 const isProduction = process.env.NODE_ENV === 'production';
 
 // PostCSS config
+// const postcssPlugins = [
+// 	cssImport(),
+// 	presetEnv({
+// 		stage: 1,
+// 		features: {
+// 			'custom-properties': false
+// 		}
+// 	}),
+// 	cssnano({
+// 		preset: [
+// 			'default',
+// 			{
+// 				calc: false
+// 			}
+// 		]
+// 	})
+// ];
+
 const postcssPlugins = [
 	cssImport(),
 	presetEnv({
-		stage: 1,
-		features: {
-			'custom-properties': false
-		}
+		stage: 1
 	}),
 	cssnano({
-		preset: [
-			'default',
-			{
-				calc: false
-			}
-		]
+		preset: 'default'
 	})
 ];
 
