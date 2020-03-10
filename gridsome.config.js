@@ -65,14 +65,6 @@ const postcssPlugins = [
 // PurgeCSS only in production
 if (isProduction) {
 	postcssPlugins.push(
-		cssnano({
-			preset: [
-				'default',
-				{
-					calc: false
-				}
-			]
-		}),
 		purgecss({
 			content: [
 				'./src/assets/**/*.css',
