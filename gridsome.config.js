@@ -87,18 +87,18 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-service-worker',
 			options: {
-				precachedRoutes: ['/'],
-				staleWhileRevalidate: {
+				precachedRoutes: ['/', '/about'],
+				cacheOnly: {
 					cacheName: 'jc.fallback',
-					routes: ['/']
+					routes: ['/', '/about']
 				},
-				networkFirst: {
+				staleWhileRevalidate: {
 					cacheName: 'jc.build',
-					routes: [/\.(?:css|js|json|svg)$/]
+					routes: [/\.(?:css|js|json)$/]
 				},
 				cacheFirst: {
 					cacheName: 'jc.statics',
-					routes: [/\.(?:woff|woff2|png|gif|jpg|jpeg|webp)$/]
+					routes: [/\.(?:woff|woff2|png|gif|jpg|jpeg|webp|svg)$/]
 				}
 			}
 		}

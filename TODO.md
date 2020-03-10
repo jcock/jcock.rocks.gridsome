@@ -7,8 +7,6 @@
 * Colophon page
 * Uses page
 * Fonts?
-* Use different analytics tool (Netlify?)
-    * Remove Google Analytics
 
 ### Functionality
 

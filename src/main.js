@@ -42,7 +42,6 @@ export default function(Vue, { head }) {
 		{ rel: 'manifest', href: '/site.webmanifest' },
 		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.woff2' },
 		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.woff2' },
-		// { rel: 'preconnect', href: 'https://www.google-analytics.com' },
 		{ rel: 'preconnect', href: site.url },
 		{ rel: 'canonical', href: site.url }
 	);
