@@ -8,10 +8,11 @@
 
 /* VARIABLES
  * ------------------------------ */
-@import 'variables/_scale.css';
+/* @import 'variables/_scale.css';
 @import 'variables/_animation.css';
 @import 'variables/_color.css';
-@import 'variables/_type.css';
+@import 'variables/_type.css'; */
+@import 'variables/_variables.css';
 
 /* GLOBAL
  * ------------------------------ */
