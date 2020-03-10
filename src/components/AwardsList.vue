@@ -47,6 +47,6 @@ export default {
 }
 
 .award--icon {
-	width: var(--step-6);
+	width: calc(var(--step-6) * 1.25);
 }
 </style>

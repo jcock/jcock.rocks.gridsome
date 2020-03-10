@@ -7,6 +7,8 @@
 			<article class="content">
 				<h1>Uses</h1>
    			<p>Hardware/software that I use most. I change up things fairly often, so this page will serve as a living document.</p>
+
+				<p class="cite">Thanks to <a href="https://wesbos.com/uses/" rel="noopener">Wes Bos</a> and his amazing Uses page.</p>
 			</article>
 		</section>
 	</layout>
@@ -68,5 +70,10 @@ export default {
 	object-position: 50%;
 	height: 100%;
 	width: 100%;
+}
+
+.cite {
+	font-size: var(--step--2);
+	color: var(--gray);
 }
 </style>
