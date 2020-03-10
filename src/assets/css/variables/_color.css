@@ -10,13 +10,12 @@
 	--pink: #ed4e6e;
 	--purple: #613d7c;
 
-	--blackOff: #0d0d0d;
-	/* --grayDarkest: #111315; */
+	--blackOff: #0f0f15;
 	--grayDarkest: #181821;
-	--grayDark: #292b2c;
-	--gray: #464a4c;
-	--grayLight: #aaa;
-	--grayLighter: #eceeef;
+	--grayDark: #35353d;
+	--gray: #6f6f74;
+	--grayLight: #a8a8ac;
+	--grayLighter: #e2e2e3;
 	--grayLightest: #f7f7f9;
 
 	--brandPrimary: var(--blue);
