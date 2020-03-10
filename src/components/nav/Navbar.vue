@@ -1,6 +1,6 @@
 <template>
 	<nav class="navbar" role="navigation">
-		<g-link to="/" class="brand">
+		<g-link to="/" class="brand" aria-label="JCOCK">
 			<jcock class="brand--img" />
 		</g-link>
 
