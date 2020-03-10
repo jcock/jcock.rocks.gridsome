@@ -10,17 +10,21 @@
 	--fluid-min-ratio: 1.2;
 	--fluid-max-ratio: 1.25;
 
+	--calc-min-width: calc(var(--fluid-min-width) / 16);
+	--calc-max-width: calc(var(--fluid-max-width) / 16);
+
 	--fluid-screen: 100vw;
 	/* --fluid-bp: calc(
 		(var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
 			((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
 	); */
 
-	--fluid-bp: calc((var(--fluid-screen) - ((320 / 16) * 1rem)) / ((1440 / 16) - (320 / 16)));
+	/* --fluid-bp: calc((var(--fluid-screen) - ((320 / 16) * 1rem)) / ((1440 / 16) - (320 / 16))); */
+	--fluid-bp: calc(
+		(var(--fluid-screen) - (var(--calc-min-width) * 1rem)) / (var(--calc-max-width) - var(--calc-min-width))
+	);
 
-	/* stylelint-disable */
 	/* --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))); */
-	/* --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width)/16*1rem)/(var(--fluid-max-width) - var(--fluid-min-width))); */
 }
 
 /* stylelint-disable no-duplicate-selectors */
