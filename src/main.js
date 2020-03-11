@@ -1,9 +1,10 @@
 import Fragment from 'vue-fragment';
-import Cloudinary, { CldImage, CldTransformation } from 'cloudinary-vue';
+import Cloudinary from 'cloudinary-vue';
 
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
 
+import 'typeface-inter';
 import 'prismjs/themes/prism.css';
 import '~/assets/css/app.css';
 
@@ -16,12 +17,18 @@ export default function(Vue, { head }) {
 		configuration: {
 			cloudName: site.cdn.cloudName,
 			secure: true
-		},
-		components: {
-			CldImage,
-			CldTransformation
 		}
 	});
+	// Vue.use(Cloudinary, {
+	// 	configuration: {
+	// 		cloudName: site.cdn.cloudName,
+	// 		secure: true
+	// 	},
+	// 	components: {
+	// 		CldImage,
+	// 		CldTransformation
+	// 	}
+	// });
 
 	// Meta and Attributes
 	head.htmlAttrs = { lang: 'en' };

@@ -2,10 +2,6 @@
 * ------------------------------- */
 @import 'global/_remedy.css';
 
-/* FONTS
- * ------------------------------ */
-@import 'global/_fonts.css';
-
 /* VARIABLES
  * ------------------------------ */
 @import 'variables/_scale.css';
