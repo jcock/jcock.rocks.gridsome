@@ -1,5 +1,6 @@
 import Fragment from 'vue-fragment';
-import Cloudinary from 'cloudinary-vue';
+import VueLazyload from 'vue-lazyload';
+import Cloudinary, { CldImage, CldTransformation } from 'cloudinary-vue';
 
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
@@ -13,22 +14,21 @@ export default function(Vue, { head }) {
 
 	// Vue Plugins
 	Vue.use(Fragment);
+	Vue.use(VueLazyload, {
+		observer: true,
+		rootMargin: '0px',
+		threshold: 0.1
+	});
 	Vue.use(Cloudinary, {
 		configuration: {
 			cloudName: site.cdn.cloudName,
 			secure: true
+		},
+		components: {
+			CldImage,
+			CldTransformation
 		}
 	});
-	// Vue.use(Cloudinary, {
-	// 	configuration: {
-	// 		cloudName: site.cdn.cloudName,
-	// 		secure: true
-	// 	},
-	// 	components: {
-	// 		CldImage,
-	// 		CldTransformation
-	// 	}
-	// });
 
 	// Meta and Attributes
 	head.htmlAttrs = { lang: 'en' };
@@ -59,8 +59,8 @@ export default function(Vue, { head }) {
 		{ rel: 'icon', type: 'image/svg+xml', sizes: '32x32', href: '/favicon.svg' },
 		{ rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: site.color.primary },
 		{ rel: 'manifest', href: '/site.webmanifest' },
-		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.woff2', type: 'font/woff2', crossorigin },
-		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.woff2', type: 'font/woff2', crossorigin },
+		{ rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.var.woff2', type: 'font/woff2' },
+		{ rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.var.woff2', type: 'font/woff2' },
 		{ rel: 'preconnect', href: site.url },
 		{ rel: 'canonical', href: site.url }
 	);

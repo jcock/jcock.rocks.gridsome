@@ -96,6 +96,11 @@ li {
 	&:focus {
 		opacity: 1;
 	}
+
+	&:active,
+	&:focus {
+		box-shadow: inset 1px 1px 0 0 var(--focusColor), 0.125rem 0.125rem 0 0 var(--focusColor);
+	}
 }
 
 .btn--top {
