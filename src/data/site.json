@@ -23,8 +23,5 @@
 	},
 	"analytics": {
 		"id": "UA-XXXXXXXXX-X"
-	},
-	"cdn": {
-		"id": "xx"
 	}
 }
