@@ -35,13 +35,13 @@ export default {
 }
 
 .title {
-	color: var(--grayLight);
+	color: var(--gray400);
 	font-size: var(--step-0);
 	font-weight: var(--fontWeightNormal);
 }
 
 .text {
-	color: var(--gray);
+	color: var(--gray500);
 	font-size: var(--step--1);
 }
 
@@ -60,7 +60,7 @@ export default {
 		}
 
 		& .text {
-			color: var(--grayLight);
+			color: var(--gray400);
 		}
 	}
 }

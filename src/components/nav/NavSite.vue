@@ -82,12 +82,12 @@ li {
 	display: block;
 	line-height: calc(var(--fluid-min-scale-1) * 1);
 	opacity: 0.5;
-	padding: calc(var(--step-0) / 2) calc(var(--step-0) / 2);
+	padding: calc(var(--step-0) / 2) var(--step-0);
 	transition: opacity var(--timingBase) var(--easePrimary);
 
 	@media screen and (min-width: 54rem) {
 		display: inline-block;
-		padding: calc(var(--step-0) / 4) calc(var(--step-0) / 3);
+		padding: calc(var(--step-0) / 4) calc(var(--step-0) / 2);
 	}
 
 	&.active--exact,

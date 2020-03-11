@@ -17,15 +17,18 @@ export default {
 
 <style scoped>
 .brand {
+	box-sizing: content-box;
 	color: var(--navLinkColor);
 	display: block;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 	opacity: 0.5;
-	transition: opacity var(--timingBase) var(--easePrimary);
+	transition: box-shadow var(--timingBase) var(--easePrimary), opacity var(--timingBase) var(--easePrimary);
+	transform: translateX(-0.5rem);
 	width: var(--step-6);
+	padding: 0.5rem;
 
 	@media screen and (min-width: 54rem) {
-		margin-top: 0.65rem;
+		margin-top: 0.4rem;
 		width: var(--step-3);
 	}
 
@@ -68,6 +71,10 @@ export default {
 		& .k {
 			transition-delay: 150ms;
 		}
+	}
+
+	&:focus {
+		box-shadow: 0.125rem 0.125rem 0 0 var(--focusColor);
 	}
 }
 </style>

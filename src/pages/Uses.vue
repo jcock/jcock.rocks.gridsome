@@ -74,6 +74,6 @@ export default {
 
 .cite {
 	font-size: var(--step--2);
-	color: var(--gray);
+	color: var(--gray500);
 }
 </style>

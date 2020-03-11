@@ -1,4 +1,5 @@
 import Fragment from 'vue-fragment';
+import Cloudinary, { CldImage, CldTransformation } from 'cloudinary-vue';
 
 import site from '~/data/site.json';
 import Default from '~/layouts/Default.vue';
@@ -9,8 +10,18 @@ import '~/assets/css/app.css';
 export default function(Vue, { head }) {
 	Vue.component('Layout', Default);
 
-	// Vue Directives
+	// Vue Plugins
 	Vue.use(Fragment);
+	Vue.use(Cloudinary, {
+		configuration: {
+			cloudName: site.cdn.cloudName,
+			secure: true
+		},
+		components: {
+			CldImage,
+			CldTransformation
+		}
+	});
 
 	// Meta and Attributes
 	head.htmlAttrs = { lang: 'en' };
@@ -18,6 +29,7 @@ export default function(Vue, { head }) {
 	head.titleTemplate = titleChunk => {
 		return titleChunk ? `${titleChunk} | ${site.name}` : `${site.name}`;
 	};
+
 	head.meta.push(
 		{ charset: 'utf-8' },
 		{ name: 'referrer', content: 'no-referrer-when-downgrade' },
@@ -40,8 +52,8 @@ export default function(Vue, { head }) {
 		{ rel: 'icon', type: 'image/svg+xml', sizes: '32x32', href: '/favicon.svg' },
 		{ rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: site.color.primary },
 		{ rel: 'manifest', href: '/site.webmanifest' },
-		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.woff2' },
-		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.woff2' },
+		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.roman.woff2', type: 'font/woff2', crossorigin },
+		// { rel: 'preload', as: 'font', href: '/assets/fonts/Inter.italic.woff2', type: 'font/woff2', crossorigin },
 		{ rel: 'preconnect', href: site.url },
 		{ rel: 'canonical', href: site.url }
 	);

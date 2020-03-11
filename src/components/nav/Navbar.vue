@@ -45,12 +45,14 @@ export default {
 	color: var(--navLinkColor);
 	display: block;
 	opacity: 0.5;
-	padding: calc(var(--step-0) / 2) 0;
+	padding: calc(var(--step-0) / 2) var(--step-0);
+	transform: translateX(calc(var(--step-0) * -1));
 	transition: opacity var(--timingBase) var(--easePrimary);
 
 	@media screen and (min-width: 54rem) {
 		display: inline-block;
-		padding: calc(var(--step-0) / 4) 0;
+		padding: calc(var(--step-0) / 4) calc(var(--step-0) / 2);
+		transform: translateX(calc((var(--step-0) / 2) * -1));
 	}
 
 	&.active--exact,
@@ -58,6 +60,10 @@ export default {
 	&:active,
 	&:focus {
 		opacity: 1;
+	}
+
+	&:focus {
+		box-shadow: 0.125rem 0.125rem 0 0 var(--focusColor);
 	}
 }
 </style>

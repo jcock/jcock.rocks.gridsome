@@ -10,13 +10,13 @@
 	--pink: #ed4e6e;
 	--purple: #613d7c;
 
-	--blackOff: #0f0f15;
-	--grayDarkest: #181821;
-	--grayDark: #35353d;
-	--gray: #6f6f74;
-	--grayLight: #a8a8ac;
-	--grayLighter: #e2e2e3;
-	--grayLightest: #f7f7f9;
+	--gray800: #0f0f15;
+	--gray700: #181821;
+	--gray600: #35353d;
+	--gray500: #6f6f74;
+	--gray400: #a8a8ac;
+	--gray300: #e2e2e3;
+	--gray200: #f7f7f9;
 
 	--brandPrimary: var(--blue);
 	--brandSuccess: var(--green);
@@ -25,8 +25,8 @@
 	--brandDanger: var(--pink);
 	--brandInverse: var(--grayDarkest);
 
-	--bodyBg: var(--grayDarkest);
-	--bodyColor: var(--grayLighter);
+	--bodyBg: var(--gray700);
+	--bodyColor: var(--gray300);
 
 	--selectionBg: var(--brandPrimary);
 	--selectionColor: var(--white);
@@ -35,6 +35,7 @@
 	--linkHoverColor: var(--white);
 
 	--navLinkColor: var(--white);
+	--focusColor: var(--brandPrimary);
 }
 
 /* DARK MODE
@@ -42,20 +43,36 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
+		--gray800: #f7f7f9;
+		--gray700: #e2e2e3;
+		--gray600: #a8a8ac;
+		--gray500: #6f6f74;
+		--gray400: #35353d;
+		--gray300: #181821;
+		--gray200: #0f0f15;
+
 		--bodyBg: var(--white);
-		--bodyColor: var(--grayDarkest);
+		--bodyColor: var(--gray300);
 
 		--linkColor: var(--bodyColor);
-		--linkHoverColor: var(--gray);
+		--linkHoverColor: var(--gray500);
+		--navLinkColor: var(--gray200);
 	}
 }
 
 body[data-theme='light'] {
+	--gray800: #f7f7f9;
+	--gray700: #e2e2e3;
+	--gray600: #a8a8ac;
+	--gray500: #6f6f74;
+	--gray400: #35353d;
+	--gray300: #181821;
+	--gray200: #0f0f15;
+
 	--bodyBg: var(--white);
-	--bodyColor: var(--grayDarkest);
+	--bodyColor: var(--gray300);
 
 	--linkColor: var(--bodyColor);
-	--linkHoverColor: var(--gray);
-
-	--navLinkColor: var(--blackOff);
+	--linkHoverColor: var(--gray500);
+	--navLinkColor: var(--gray200);
 }

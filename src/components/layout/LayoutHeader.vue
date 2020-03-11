@@ -24,9 +24,9 @@ export default {
 
 <style scoped>
 .btn--skip {
-	background-color: var(--bodyColor);
-	color: var(--bodyBg);
-	left: 1rem;
+	background-color: var(--black);
+	color: var(--white);
+	left: 0;
 	padding: 0.5rem 1rem;
 	position: absolute;
 	top: 0;
@@ -42,6 +42,10 @@ export default {
 		position: absolute;
 		white-space: nowrap;
 		width: 1px;
+	}
+
+	&:focus {
+		box-shadow: 0.2rem 0.2rem 0 0 var(--focusColor);
 	}
 }
 </style>

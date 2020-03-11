@@ -40,5 +40,6 @@ export default {
 	color: var(--bodyColor);
 	cursor: pointer;
 	transition: color var(--timingBase) var(--easePrimary);
+	white-space: nowrap;
 }
 </style>

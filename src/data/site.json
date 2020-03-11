@@ -3,7 +3,7 @@
 	"description": "The portfolio of Jason Cockerham, User Experience Designer and Front-End Developer.",
 	"url": "https://jcock.rocks",
 	"color": {
-		"primary": "#0d0d0d"
+		"primary": "#0f0f15"
 	},
 	"author": {
 		"name": "Jason Cockerham",
@@ -23,5 +23,8 @@
 	},
 	"analytics": {
 		"id": "UA-XXXXXXXXX-X"
+	},
+	"cdn": {
+		"cloudName": "jcock-rocks"
 	}
 }
