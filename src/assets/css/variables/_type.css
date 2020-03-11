@@ -1,6 +1,6 @@
 :root {
-	--fontSansSerif: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+	--fontSansSerif: 'Inter var', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue',
+		Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 	--fontSerif: Georgia, 'Times New Roman', Times, serif;
 	--fontMonospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 	--fontBase: var(--fontSansSerif);
