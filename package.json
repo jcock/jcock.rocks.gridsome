@@ -27,13 +27,14 @@
 	},
 	"dependencies": {
 		"@gridsome/plugin-critical": "^0.1.6",
+		"@gridsome/plugin-google-analytics": "^0.1.0",
 		"@gridsome/plugin-sitemap": "^0.2.3",
 		"@gridsome/remark-prismjs": "^0.3.0",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-remark": "^0.4.0",
 		"gridsome": "^0.7.13",
-		"gridsome-plugin-service-worker": "^0.1.4",
-		"vue-fragment": "^1.5.1"
+		"gridsome-plugin-image-cdn": "^0.1.1",
+		"gridsome-plugin-service-worker": "^0.1.4"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.6",
@@ -54,6 +55,7 @@
 		"stylelint-config-prettier": "^8.0.1",
 		"stylelint-config-recommended": "^3.0.0",
 		"stylelint-prettier": "^1.1.2",
+		"vue-fragment": "^1.5.1",
 		"vue-svg-loader": "^0.16.0"
 	}
 }

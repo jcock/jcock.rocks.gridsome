@@ -76,6 +76,15 @@ module.exports = {
 			}
 		},
 		{
+			use: '@gridsome/plugin-google-analytics',
+			options: {
+				id: site.analytics.id,
+				debug: {
+					sendHitTask: isProduction
+				}
+			}
+		},
+		{
 			use: 'gridsome-plugin-service-worker',
 			options: {
 				precachedRoutes: ['/', '/about'],
