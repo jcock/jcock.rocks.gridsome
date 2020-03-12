@@ -19,8 +19,7 @@
 
 ### Issues
 
-* Cant `rel=preload` font files because they are being hashed in build
-* Site flash of partially unstyled
+* Site flash of partially unstyled content
 * Cloudinary vue plugin build error
 
 ### Test
