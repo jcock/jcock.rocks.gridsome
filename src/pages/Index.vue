@@ -4,7 +4,7 @@
 			<h1 class="intro">I’m Jason Cockerham and I make internets.</h1>
 		</transition>
 
-		<cld-image alt="This is an image" class="cld-responsive" publicId="sample.jpg" width="auto" fetchFormat="auto" quality="auto" dpr="auto" crop="scale" secure="true" responsive="width" />
+		<!-- <cld-image alt="This is an image" class="cld-responsive" publicId="sample.jpg" width="auto" fetchFormat="auto" quality="auto" dpr="auto" crop="scale" secure="true" responsive="width" /> -->
 
 		<transition-group name="staggered" tag="section" class="posts" role="list" appear>
 			<PostCard v-for="(edge, index) in $page.posts.edges" :key="edge.node.id" :post="edge.node" :style="{ transitionDelay: `${index}00ms` }" role="listitem" />
